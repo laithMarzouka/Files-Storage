@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<title>Comparison — justinsohn@tutanota.com</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f0f0f0; color: #333;
+    font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; }
+  .topbar { background: #fff; border-bottom: 1px solid #e0e0e0; padding: 14px 20px; }
+  .topbar h1 { margin: 0 0 4px; font-size: 16px; font-weight: 500; }
+  .topbar .sub { color: #777; font-size: 12px; font-family: monospace;
+    display: flex; flex-wrap: wrap; gap: 12px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .pill { background: #e3f2fd; color: #1565c0; border-radius: 12px;
+    padding: 2px 10px; font-size: 11px; font-family: monospace; }
+  .grid { display: grid; gap: 16px; padding: 16px 20px; align-items: start;
+    grid-template-columns: repeat(1, minmax(0, 1fr)); }
+  .col { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px;
+    min-width: 0; overflow: hidden; }
+  /* Sticky so the provenance of the column you are reading is always on screen. */
+  .colHead { position: sticky; top: 0; z-index: 2; background: #fafafa;
+    border-bottom: 1px solid #e0e0e0; padding: 12px 16px; }
+  .colTitle { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .badge { background: #1565c0; color: #fff; border-radius: 4px;
+    padding: 2px 8px; font-size: 12px; font-weight: 600; }
+  .engine { font-size: 13px; font-weight: 500; }
+  .meta { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; }
+  .metaRow { display: contents; }
+  .metaKey { color: #888; font-size: 11px; text-transform: uppercase;
+    letter-spacing: .04em; }
+  .metaValue { font-size: 12px; font-family: monospace; word-break: break-word; }
+  .calls { border-bottom: 1px solid #eee; padding: 8px 16px; background: #fcfcfc; }
+  .calls summary { cursor: pointer; color: #888; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .04em; }
+  .call { display: flex; align-items: baseline; gap: 8px; padding: 3px 0;
+    font-family: monospace; font-size: 11px; line-height: 1.5; }
+  .call:first-of-type { margin-top: 8px; }
+  .callNum { color: #aaa; min-width: 16px; text-align: right; flex-shrink: 0; }
+  .callName { color: #1565c0; font-weight: 600; min-width: 56px; flex-shrink: 0; }
+  .callInput { word-break: break-word; white-space: pre-wrap; }
+  .report { padding: 16px; }
+
+  .report { font-size: 14px; line-height: 1.55; color: #333; }
+  .report h2 { font-size: 17px; margin: 18px 0 8px; }
+  .report h3 { font-size: 15px; margin: 14px 0 6px; }
+  .report > :first-child { margin-top: 0; }
+  .report table { border-collapse: collapse; max-width: 100%; }
+  .report th, .report td { border: 1px solid #ddd; padding: 6px 10px; text-align: left; }
+  .report th { background: #f5f5f5; }
+  .report svg { max-width: 100%; height: auto; }
+  .report pre { white-space: pre-wrap; word-break: break-word; }
+  /* Markdown reports reach tags the HTML ones never used. */
+  .report h1 { font-size: 19px; margin: 0 0 10px; }
+  .report p { margin: 8px 0; }
+  .report ul, .report ol { margin: 8px 0; padding-left: 22px; }
+  .report li { margin: 3px 0; }
+  .report code { background: #f2f4f6; padding: 1px 5px; border-radius: 3px;
+    font-family: 'SFMono-Regular', Consolas, Menlo, monospace; font-size: 12.5px; }
+  .report hr { border: none; border-top: 1px solid #e0e0e0; margin: 16px 0; }
+  .report a { color: #1565c0; }
+
+  @media (max-width: 1100px) { .grid { grid-template-columns: 1fr; }
+    .colHead { position: static; } }
+  @media print { body { background: #fff; }
+    .col { border: none; break-inside: avoid; }
+    .colHead { position: static; } }
+</style></head>
+<body>
+  <div class="topbar">
+    <h1>justinsohn@tutanota.com — 1 version compared</h1>
+    <div class="sub">
+      <span>patient 54ea6c65-6adf-456e-b194-91f575aadfee</span>
+      <span>clinic a8173f91-cc6e-403b-97bc-c7544e60df6d</span>
+    </div>
+    <div class="pills"><span class="pill">1. -OZQiyFqWBm_nxbDg2aj</span><span class="pill">2. -OrtT0767PsaYwKneupH</span></div>
+  </div>
+  <div class="grid"><section class="col">
+  <header class="colHead">
+    <div class="colTitle">
+      <span class="badge">v11</span>
+      <span class="engine">Agent SDK</span>
+    </div>
+    <div class="meta"><div class="metaRow"><span class="metaKey">When</span><span class="metaValue">11 Sep 2026 14:21</span></div><div class="metaRow"><span class="metaKey">Engine</span><span class="metaValue">Agent SDK</span></div><div class="metaRow"><span class="metaKey">Model</span><span class="metaValue">claude-opus-5</span></div><div class="metaRow"><span class="metaKey">Run time</span><span class="metaValue">233.2 s</span></div><div class="metaRow"><span class="metaKey">Turns</span><span class="metaValue">15 of 100 max</span></div><div class="metaRow"><span class="metaKey">Tool calls</span><span class="metaValue">14</span></div><div class="metaRow"><span class="metaKey">Tokens</span><span class="metaValue">567,433 in (512,125 cached, 55,278 cache write, 30 new) · 19,177 out</span></div><div class="metaRow"><span class="metaKey">Cost</span><span class="metaValue">$1.08</span></div><div class="metaRow"><span class="metaKey">Effort</span><span class="metaValue">high</span></div><div class="metaRow"><span class="metaKey">Thinking</span><span class="metaValue">Enabled</span></div><div class="metaRow"><span class="metaKey">Tools available</span><span class="metaValue">Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch</span></div><div class="metaRow"><span class="metaKey">Tools used</span><span class="metaValue">Bash ×14</span></div><div class="metaRow"><span class="metaKey">Analysis source</span><span class="metaValue">not provided</span></div></div>
+  </header>
+  <details class="calls"><summary>What the agent did (14 tool calls)</summary><div class="call"><span class="callNum">1</span><span class="callName">Bash</span><span class="callInput">ls -la &amp;&amp; wc -l assessment_data.md</span></div><div class="call"><span class="callNum">2</span><span class="callName">Bash</span><span class="callInput">cat -n assessment_data.md</span></div><div class="call"><span class="callNum">3</span><span class="callName">Bash</span><span class="callInput">sed -n '35,220p' assessment_data.md</span></div><div class="call"><span class="callNum">4</span><span class="callName">Bash</span><span class="callInput">sed -n '220,480p' assessment_data.md</span></div><div class="call"><span class="callNum">5</span><span class="callName">Bash</span><span class="callInput">sed -n '480,741p' assessment_data.md</span></div><div class="call"><span class="callNum">6</span><span class="callName">Bash</span><span class="callInput">cat &gt; report.md &lt;&lt; 'EOF' # Assessment Comparison **Patient:** 33-year-old male · **Assessment 1:** 5 Sep 2025 · **Assessment 2:** 5 May 2026 (242 days later) ## The main takeaway The two assessments p…</span></div><div class="call"><span class="callNum">7</span><span class="callName">Bash</span><span class="callInput">grep -n &quot;Score: \|Value: \|Z-Score: &quot; assessment_data.md | sed -n '1,80p'</span></div><div class="call"><span class="callNum">8</span><span class="callName">Bash</span><span class="callInput">cat &gt; report.md &lt;&lt; 'EOF' # Assessment Comparison **Patient:** 33-year-old male · **Assessment 1:** 5 Sep 2025 · **Assessment 2:** 5 May 2026 (242 days later) ## Main takeaway The two assessments point…</span></div><div class="call"><span class="callNum">9</span><span class="callName">Bash</span><span class="callInput">wc -w report.md; echo &quot;--- html/code/img/link check ---&quot;; grep -nE '&lt;[a-zA-Z/]|!\[|\]\(' report.md; grep -nF '```' report.md; echo &quot;(no output above = clean)&quot;</span></div><div class="call"><span class="callNum">10</span><span class="callName">Bash</span><span class="callInput">grep -n &quot;80.63\|Change |&quot; report.md; head -8 report.md</span></div><div class="call"><span class="callNum">11</span><span class="callName">Bash</span><span class="callInput">cat &gt; report.md &lt;&lt; 'ENDOFREPORT' # Assessment Comparison **Patient:** 33-year-old male · **Assessment 1:** 5 Sep 2025 · **Assessment 2:** 5 May 2026 (242 days later) ## Main takeaway The two assessmen…</span></div><div class="call"><span class="callNum">12</span><span class="callName">Bash</span><span class="callInput">python3 - &lt;&lt; 'PYEOF' import re data = open('assessment_data.md').read() rep = open('report.md').read() # gather all numeric tokens in report nums = set(re.findall(r'-?\d+\.?\d*', rep)) dnums = set(re.…</span></div><div class="call"><span class="callNum">13</span><span class="callName">Bash</span><span class="callInput">sed -i '' \ -e 's/| 4\.090 |/| 4.09 |/' \ -e 's/443\.47 ms/443.47177 ms/' \ -e 's/362\.84 ms/362.84076 ms/' \ -e 's/54\.29 ms/54.29341 ms/' \ -e 's/34\.80 ms/34.800777 ms/' report.md &amp;&amp; grep -nE '4\.0…</span></div><div class="call"><span class="callNum">14</span><span class="callName">Bash</span><span class="callInput">python3 - &lt;&lt; 'PYEOF' import re data = open('assessment_data.md').read() rep = open('report.md').read() dn = set(re.findall(r'-?\d+\.?\d*', data)) bad=[] for n in re.findall(r'[−-]?\d+\.?\d+', rep.repl…</span></div></details>
+  <div class="report"><h1>Assessment Comparison</h1>
+<p><strong>Patient:</strong> 33-year-old male · <strong>Assessment 1:</strong> 5 Sep 2025 · <strong>Assessment 2:</strong> 5 May 2026 (242 days later)</p>
+<h2>Main takeaway</h2>
+<p>The two assessments point in different directions, and that split is the most important thing here. <strong>Measured attention performance improved clearly</strong> and <strong>general wellbeing and depression self-reports improved</strong>. At the same time, <strong>self-reported anxiety rose</strong> and the <strong>EEG shifted broadly toward slower activity</strong>, moving several focus-related ratios out of their normal ranges. That EEG change runs the same direction in nearly every band — the pattern a genuine slowing produces, but also the pattern a difference in alertness or recording conditions produces. It is contradicted by the performance task, so it should not yet be read as a decline in attention.</p>
+<h2>Attention task (CPT): the clearest improvement</h2>
+<table><thead><tr><th>Metric</th><th>Assessment 1</th><th>Assessment 2</th></tr></thead><tbody><tr><td>Accuracy</td><td>99.5% (z 0.71, Very High)</td><td>99.75% (z 0.79, Superior)</td></tr><tr><td>Commission errors (impulsivity)</td><td>2 (z 0.58, Very High)</td><td>1 (z 0.69, Very High)</td></tr><tr><td>Omission errors (inattention)</td><td>0 (z 0.41, Very Superior)</td><td>0 (z 0.41, Very Superior)</td></tr><tr><td>Reaction time</td><td>443.47177 ms (z −0.23, Medium)</td><td>362.84076 ms (z 1.32, Superior)</td></tr><tr><td>Reaction time variability</td><td>54.29341 ms (z 0.9, Very High)</td><td>34.800777 ms (z 1.54, Very Superior)</td></tr></tbody></table>
+<p>Speed and consistency both improved substantially with no loss of accuracy — the patient did not trade care for speed. Reaction time variability, the measure most tied to inconsistent attention, showed the largest z-score gain. A practice effect from repeating the same task cannot be ruled out.</p>
+<h2>Self-report questionnaires</h2>
+<table><thead><tr><th>Questionnaire</th><th>A1</th><th>A2</th><th>Reference</th></tr></thead><tbody><tr><td>GHQ-12 (general health)</td><td>11</td><td>4</td><td>≤ 12 good — improved well within range</td></tr><tr><td>PHQ-9 (depression)</td><td>9</td><td>7</td><td>≤ 10 good, ≤ 5 better — improved</td></tr><tr><td>ASRS (adult ADHD screen)</td><td>10</td><td>11</td><td>≤ 14 good — essentially unchanged</td></tr><tr><td>GAD-7 (anxiety)</td><td>11</td><td>13</td><td>≤ 10 good, ≤ 5 better — worsened, outside range</td></tr></tbody></table>
+<p><strong>GHQ-12 is the standout improvement.</strong> Concentration, decision-making, enjoyment of daily activities and overall happiness all moved from &quot;same as usual&quot; to &quot;better than usual&quot;, and feeling &quot;constantly under strain&quot; eased from &quot;rather more than usual&quot; to &quot;no more than usual&quot;.</p>
+<p><strong>PHQ-9 improved modestly but meaningfully in quality:</strong> low mood and loss of interest both eased from &quot;more than half the days&quot; to &quot;several days&quot;, and the functional-impact item improved from &quot;very difficult&quot; to &quot;somewhat difficult&quot;. Two items moved the other way — <strong>fatigue worsened</strong> to &quot;more than half the days&quot;, and concentration difficulty newly appeared at &quot;several days&quot;.</p>
+<p><strong>GAD-7 deserves attention.</strong> It was already above the &quot;good&quot; cut-off and rose further. Two items drove this: worrying too much about different things went from &quot;not at all&quot; to &quot;more than half the days&quot;, and trouble relaxing from &quot;several days&quot; to &quot;more than half the days&quot;; irritability remained &quot;nearly every day&quot; at both visits. ASRS also rates difficulty unwinding or relaxing as &quot;often&quot; at both timepoints — <strong>difficulty relaxing is the most consistent complaint across the questionnaires.</strong></p>
+<h2>EEG: a broad shift toward slower activity</h2>
+<p><strong>Provenance note:</strong> Assessment 1 recorded 6 channels; Assessment 2 recorded 8, adding Fp2 and Tp9. Only the six shared channels (Cz, F3, F4, Fp1, Fz, Tp10) are compared below. Tp9 in Assessment 2 carries extreme values — low alpha z = 7.775 eyes open, 5.297 eyes closed — that warrant a signal-quality check before being read clinically.</p>
+<p>Theta with eyes open (associated with inattention, brain fog or fatigue when high) rose at every shared site:</p>
+<table><thead><tr><th>Theta, eyes open</th><th>A1 (z)</th><th>A2 (z)</th></tr></thead><tbody><tr><td>Cz</td><td>1.157</td><td>2.667</td></tr><tr><td>F3</td><td>1.062</td><td>4.863</td></tr><tr><td>F4</td><td>1.774</td><td>4.212</td></tr><tr><td>Fp1</td><td>1.116</td><td>2.375</td></tr><tr><td>Fz</td><td>1.289</td><td>4.09</td></tr><tr><td>Tp10</td><td>0.067</td><td>3.442</td></tr></tbody></table>
+<p>The rest of the spectrum tilts the same way: <strong>low alpha rose sharply</strong> (Cz eyes open 0.216 → 3.021; Fp1 1.509 → 4.118) while <strong>high alpha fell</strong> (Cz eyes open 0.967 → −1.883), and beta, low beta, high beta and delta moved downward at nearly every shared site (beta at Cz eyes open −1.038 → −2.198; F3 −0.737 → −2.323).</p>
+<p>The EEG checks tell the same story. These moved out of, or further from, normal:</p>
+<table><thead><tr><th>Check</th><th>Normal</th><th>A1</th><th>A2</th></tr></thead><tbody><tr><td>Theta/Beta Ratio, frontal right</td><td>≤ 2.2</td><td>2.33</td><td>6.16</td></tr><tr><td>Theta/Beta Ratio, frontal left</td><td>≤ 2.2</td><td>3.05</td><td>4.57</td></tr><tr><td>Theta/Beta Ratio, central (eyes open)</td><td>≤ 2.2</td><td>2.9</td><td>4.15</td></tr><tr><td>Theta/Beta Ratio while counting, central</td><td>≤ 3 good</td><td>2.55</td><td>4.96</td></tr><tr><td>Low-alpha/High-alpha Ratio, frontal</td><td>≤ 2.3 good</td><td>2.01</td><td>3.24</td></tr><tr><td>Theta/Beta Ratio Symmetry, frontal</td><td>&gt; 0.8</td><td>1.31</td><td>0.74</td></tr><tr><td>Beta Response while counting, central</td><td>&gt; −15%</td><td>1%</td><td>−16%</td></tr><tr><td>Peak Alpha, central</td><td>&gt; 9.5 Hz</td><td>9 Hz</td><td>8 Hz</td></tr></tbody></table>
+<p>Peak alpha was already below its cut-off at Assessment 1 and slowed further. It, the low-alpha/high-alpha ratio and the brainmap alpha shift are three views of the same slowing, not three independent findings.</p>
+<p>Several checks stayed within normal range at both visits: alpha response (54% → 55%), alpha recovery (−21% → −4%), alpha symmetry (0.96 → 0.96), theta symmetry (1.23 → 0.92), both theta/alpha ratios (left 1.09 → 1.25, right 0.85 → 1.31), theta/low-beta ratio (1.88 → 2.88) and theta/beta ratio response while counting (5% → 5%). Beta balance (0.59 → 0.42) and beta symmetry (0.94 → 1.24) remain in range but now sit nearer their edges.</p>
+<h2>What this may mean</h2>
+<p>Possible explanations, not conclusions:</p>
+<ul><li><strong>The EEG and the CPT disagree.</strong> If the elevated theta/beta ratios reflected a real decline in sustained attention, task performance would be expected to worsen; instead it improved markedly. That argues against reading the EEG slowing as an attention problem on its own.</li><li><strong>Session state is a live alternative.</strong> The reference material notes a beta response while counting below −15% may indicate tiredness when reading or problem solving, and the PHQ-9 fatigue item worsened over the same period. Fatigue on the recording day could plausibly account for much of a global slowing.</li><li><strong>Wellbeing and anxiety diverged coherently.</strong> Improving GHQ-12 and PHQ-9 alongside a rising GAD-7 is internally consistent if worry and difficulty relaxing have become the dominant symptom while mood and overall function lifted.</li><li><strong>No cause can be established.</strong> The data do not record what happened between the two dates, so no change can be attributed to any intervention or circumstance.</li></ul>
+<h2>Overall verdict</h2>
+<p>A mixed but broadly encouraging picture. Objective attention performance and general wellbeing both improved clearly; anxiety is the one measure that worsened and is now the leading self-reported concern. The EEG shows a substantial global slowing that is unexplained, is contradicted by the performance data, and carries enough session-state and montage caveats that it should be treated as provisional.</p>
+<h2>Suggested next steps</h2>
+<ol><li><strong>Discuss the anxiety rise directly</strong> — specifically worry and difficulty relaxing, which recur across GAD-7, ASRS and the PHQ-9 fatigue item.</li><li><strong>Clarify Assessment 2's recording conditions:</strong> time of day, prior night's sleep, caffeine, and alertness or drowsiness during the session.</li><li><strong>Review raw signal quality for Assessment 2, especially Tp9,</strong> before its values inform interpretation.</li><li><strong>Consider repeating the EEG under matched conditions</strong> to establish whether the slowing is stable or a one-session state effect.</li><li><strong>Explore the worsened fatigue and concentration items,</strong> and ask about sleep quality despite PHQ-9 recording no sleep problem, since several EEG checks list sleep disturbance among their possible modifiers.</li></ol></div>
+</section></div>
+</body></html>

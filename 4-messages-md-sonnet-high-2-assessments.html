@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<title>Comparison — justinsohn@tutanota.com</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f0f0f0; color: #333;
+    font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; }
+  .topbar { background: #fff; border-bottom: 1px solid #e0e0e0; padding: 14px 20px; }
+  .topbar h1 { margin: 0 0 4px; font-size: 16px; font-weight: 500; }
+  .topbar .sub { color: #777; font-size: 12px; font-family: monospace;
+    display: flex; flex-wrap: wrap; gap: 12px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .pill { background: #e3f2fd; color: #1565c0; border-radius: 12px;
+    padding: 2px 10px; font-size: 11px; font-family: monospace; }
+  .grid { display: grid; gap: 16px; padding: 16px 20px; align-items: start;
+    grid-template-columns: repeat(1, minmax(0, 1fr)); }
+  .col { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px;
+    min-width: 0; overflow: hidden; }
+  /* Sticky so the provenance of the column you are reading is always on screen. */
+  .colHead { position: sticky; top: 0; z-index: 2; background: #fafafa;
+    border-bottom: 1px solid #e0e0e0; padding: 12px 16px; }
+  .colTitle { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .badge { background: #1565c0; color: #fff; border-radius: 4px;
+    padding: 2px 8px; font-size: 12px; font-weight: 600; }
+  .engine { font-size: 13px; font-weight: 500; }
+  .meta { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; }
+  .metaRow { display: contents; }
+  .metaKey { color: #888; font-size: 11px; text-transform: uppercase;
+    letter-spacing: .04em; }
+  .metaValue { font-size: 12px; font-family: monospace; word-break: break-word; }
+  .calls { border-bottom: 1px solid #eee; padding: 8px 16px; background: #fcfcfc; }
+  .calls summary { cursor: pointer; color: #888; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .04em; }
+  .call { display: flex; align-items: baseline; gap: 8px; padding: 3px 0;
+    font-family: monospace; font-size: 11px; line-height: 1.5; }
+  .call:first-of-type { margin-top: 8px; }
+  .callNum { color: #aaa; min-width: 16px; text-align: right; flex-shrink: 0; }
+  .callName { color: #1565c0; font-weight: 600; min-width: 56px; flex-shrink: 0; }
+  .callInput { word-break: break-word; white-space: pre-wrap; }
+  .report { padding: 16px; }
+
+  .report { font-size: 14px; line-height: 1.55; color: #333; }
+  .report h2 { font-size: 17px; margin: 18px 0 8px; }
+  .report h3 { font-size: 15px; margin: 14px 0 6px; }
+  .report > :first-child { margin-top: 0; }
+  .report table { border-collapse: collapse; max-width: 100%; }
+  .report th, .report td { border: 1px solid #ddd; padding: 6px 10px; text-align: left; }
+  .report th { background: #f5f5f5; }
+  .report svg { max-width: 100%; height: auto; }
+  .report pre { white-space: pre-wrap; word-break: break-word; }
+  /* Markdown reports reach tags the HTML ones never used. */
+  .report h1 { font-size: 19px; margin: 0 0 10px; }
+  .report p { margin: 8px 0; }
+  .report ul, .report ol { margin: 8px 0; padding-left: 22px; }
+  .report li { margin: 3px 0; }
+  .report code { background: #f2f4f6; padding: 1px 5px; border-radius: 3px;
+    font-family: 'SFMono-Regular', Consolas, Menlo, monospace; font-size: 12.5px; }
+  .report hr { border: none; border-top: 1px solid #e0e0e0; margin: 16px 0; }
+  .report a { color: #1565c0; }
+
+  @media (max-width: 1100px) { .grid { grid-template-columns: 1fr; }
+    .colHead { position: static; } }
+  @media print { body { background: #fff; }
+    .col { border: none; break-inside: avoid; }
+    .colHead { position: static; } }
+</style></head>
+<body>
+  <div class="topbar">
+    <h1>justinsohn@tutanota.com — 1 version compared</h1>
+    <div class="sub">
+      <span>patient 54ea6c65-6adf-456e-b194-91f575aadfee</span>
+      <span>clinic a8173f91-cc6e-403b-97bc-c7544e60df6d</span>
+    </div>
+    <div class="pills"><span class="pill">1. -OZQiyFqWBm_nxbDg2aj</span><span class="pill">2. -OrtT0767PsaYwKneupH</span></div>
+  </div>
+  <div class="grid"><section class="col">
+  <header class="colHead">
+    <div class="colTitle">
+      <span class="badge">v12</span>
+      <span class="engine">Messages</span>
+    </div>
+    <div class="meta"><div class="metaRow"><span class="metaKey">When</span><span class="metaValue">11 Sep 2026 15:51</span></div><div class="metaRow"><span class="metaKey">Engine</span><span class="metaValue">Messages</span></div><div class="metaRow"><span class="metaKey">Model</span><span class="metaValue">claude-sonnet-5</span></div><div class="metaRow"><span class="metaKey">Run time</span><span class="metaValue">54.4 s</span></div><div class="metaRow"><span class="metaKey">Turns</span><span class="metaValue">1</span></div><div class="metaRow"><span class="metaKey">Tool calls</span><span class="metaValue">0</span></div><div class="metaRow"><span class="metaKey">Tokens</span><span class="metaValue">12,964 in (4,802 cache write, 8,162 new) · 5,593 out</span></div><div class="metaRow"><span class="metaKey">Cost</span><span class="metaValue">$0.084 (estimated)</span></div><div class="metaRow"><span class="metaKey">Effort</span><span class="metaValue">high</span></div><div class="metaRow"><span class="metaKey">Thinking</span><span class="metaValue">Enabled</span></div><div class="metaRow"><span class="metaKey">Tools available</span><span class="metaValue">none</span></div><div class="metaRow"><span class="metaKey">Tools used</span><span class="metaValue">none</span></div><div class="metaRow"><span class="metaKey">Analysis source</span><span class="metaValue">not provided</span></div></div>
+  </header>
+  
+  <div class="report"><h1>Assessment Comparison — 2025-09-05 vs. 2026-05-05 (242 days apart)</h1>
+<p><strong>Main takeaway:</strong> Overall wellbeing, mood, and task-based attention all moved in a positive direction — general health, depression symptoms, and CPT (attention test) performance all improved. However, anxiety symptoms ticked up rather than down, and the EEG recording shows a large, broad shift toward more theta and less beta activity that is worth clarifying before drawing conclusions from it.</p>
+<h2>Symptom Questionnaires</h2>
+<table><thead><tr><th>Measure</th><th>Sept 2025</th><th>May 2026</th><th>Change</th><th>Status</th></tr></thead><tbody><tr><td>GHQ-12 (general health, ≤12 good)</td><td>11</td><td>4</td><td>↓ 7 (better)</td><td>Good → Good, clearly stronger</td></tr><tr><td>PHQ-9 (depression, ≤10 good, ≤5 better)</td><td>9</td><td>7</td><td>↓ 2 (better)</td><td>Good, trending toward &quot;better&quot;</td></tr><tr><td>ASRS (ADHD symptoms, ≤14 good)</td><td>10</td><td>11</td><td>↑ 1 (~stable)</td><td>Good, essentially unchanged</td></tr><tr><td>GAD-7 (anxiety, ≤10 good, ≤5 better)</td><td>11</td><td>13</td><td>↑ 2 (worse)</td><td>Above &quot;good&quot; range at both visits, now more so</td></tr></tbody></table>
+<p>The patient reports feeling notably better day-to-day (concentration, mood, confidence, enjoyment all rated &quot;better than usual&quot; at follow-up) and mild improvement in depressive symptoms. Anxiety is the exception — worry and difficulty relaxing were reported as more frequent this time, pushing the GAD-7 further above the &quot;good&quot; threshold. This mismatch (better mood/function, worse anxiety) is worth exploring directly with the patient.</p>
+<h2>Attention Performance (CPT)</h2>
+<table><thead><tr><th>Metric</th><th>Sept 2025</th><th>May 2026</th><th>Change</th></tr></thead><tbody><tr><td>Accuracy</td><td>99.5%</td><td>99.75%</td><td>Slightly better</td></tr><tr><td>Commission errors (impulsivity)</td><td>2</td><td>1</td><td>Better</td></tr><tr><td>Omission errors (inattention)</td><td>0</td><td>0</td><td>Unchanged, excellent</td></tr><tr><td>Reaction time</td><td>443 ms</td><td>363 ms</td><td>Faster</td></tr><tr><td>Reaction time variability</td><td>54.3 ms</td><td>34.8 ms</td><td>More consistent</td></tr></tbody></table>
+<p>This is a consistently favorable picture: faster, more accurate, and more consistent responses, with fewer impulsive errors. Behaviorally, sustained attention looks improved.</p>
+<h2>Brain Activity (EEG)</h2>
+<p>A caveat first: the follow-up recording included two additional channels (Fp2, Tp9) not present initially, so the montage wasn't identical — keep this in mind when comparing.</p>
+<table><thead><tr><th>EEG Check (normal range)</th><th>Sept 2025</th><th>May 2026</th><th>Status</th></tr></thead><tbody><tr><td>Peak Alpha, Central (&gt;9.5 Hz better)</td><td>9 Hz</td><td>8 Hz</td><td>Slower, both below normal</td></tr><tr><td>Theta/Beta Ratio, Central eyes-open (≤2.2)</td><td>2.90</td><td>4.15</td><td>Worsened, further above normal</td></tr><tr><td>Theta/Beta Ratio, Frontal-L (≤2.2)</td><td>3.05</td><td>4.57</td><td>Worsened</td></tr><tr><td>Theta/Beta Ratio, Frontal-R (≤2.2)</td><td>2.33</td><td>6.16</td><td>Notably worsened</td></tr><tr><td>Theta/Beta While Counting, Central (≤3 good)</td><td>2.55</td><td>4.96</td><td>Now above the &quot;good&quot; cutoff</td></tr><tr><td>Low-alpha/High-alpha, Frontal (≤2.3 good)</td><td>2.01</td><td>3.24</td><td>Above the &quot;good&quot; range</td></tr><tr><td>Theta/Beta Symmetry, Frontal (&gt;0.8 normal)</td><td>1.31</td><td>0.74</td><td>Dropped below normal</td></tr><tr><td>Beta Response while Counting (&gt;-15% normal)</td><td>+1%</td><td>-16%</td><td>Just outside normal</td></tr></tbody></table>
+<p>Everything else (Alpha Response, Alpha Recovery, Alpha/Beta Symmetry, Theta Symmetry, Theta/Low-Beta Ratio) stayed broadly stable and within or near normal limits.</p>
+<p>The brainmaps back up these checks: theta z-scores rose sharply across nearly all frontal/central sites (e.g., frontal theta going from roughly +1 to +3–5), while beta z-scores dropped substantially (from mildly low to strongly low, around -1.5 to -2 at most sites), and low-alpha values became very elevated. Together this is a broad theta-up/beta-down pattern rather than an isolated finding, which is more consistent with a state effect (e.g., drowsiness, fatigue, time-of-day, or reduced arousal during this particular recording) than with a specific localized change — though this can't be confirmed from the data alone.</p>
+<h2>Overall Verdict &amp; Next Steps</h2>
+<p>Self-reported wellbeing and depressive symptoms improved, and objective attention-task performance (CPT) improved as well — a generally encouraging picture. Anxiety symptoms, however, increased and remain above the &quot;good&quot; range, which stands somewhat apart from the rest of the improvement and deserves direct follow-up conversation. The EEG shows a broad theta-up/beta-down shift with a slightly slower peak alpha frequency; given its breadth and the montage difference between visits, this is best treated as a flag for clarification rather than a confirmed clinical change.</p>
+<p><strong>Suggested next steps:</strong></p>
+<ul><li>Discuss the GAD-7 increase directly with the patient to understand what's driving current worry/tension, since it diverges from the otherwise positive trend.</li><li>Ask about sleep, caffeine, time of day, and alertness at the time of the follow-up EEG recording, since a broad theta-up/beta-down shift can reflect drowsiness or reduced arousal during the session.</li><li>Consider a repeat EEG recording under matched conditions (same time of day, same channel montage) to confirm whether the theta/beta and peak-alpha changes are consistent or session-specific.</li><li>Continue tracking GAD-7 and PHQ-9 at the next check-in to see whether the anxiety uptick persists or resolves.</li></ul></div>
+</section></div>
+</body></html>

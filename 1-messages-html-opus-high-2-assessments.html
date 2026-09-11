@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<title>Comparison — justinsohn@tutanota.com</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f0f0f0; color: #333;
+    font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; }
+  .topbar { background: #fff; border-bottom: 1px solid #e0e0e0; padding: 14px 20px; }
+  .topbar h1 { margin: 0 0 4px; font-size: 16px; font-weight: 500; }
+  .topbar .sub { color: #777; font-size: 12px; font-family: monospace;
+    display: flex; flex-wrap: wrap; gap: 12px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .pill { background: #e3f2fd; color: #1565c0; border-radius: 12px;
+    padding: 2px 10px; font-size: 11px; font-family: monospace; }
+  .grid { display: grid; gap: 16px; padding: 16px 20px; align-items: start;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .col { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px;
+    min-width: 0; overflow: hidden; }
+  /* Sticky so the provenance of the column you are reading is always on screen. */
+  .colHead { position: sticky; top: 0; z-index: 2; background: #fafafa;
+    border-bottom: 1px solid #e0e0e0; padding: 12px 16px; }
+  .colTitle { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .badge { background: #1565c0; color: #fff; border-radius: 4px;
+    padding: 2px 8px; font-size: 12px; font-weight: 600; }
+  .engine { font-size: 13px; font-weight: 500; }
+  .meta { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; }
+  .metaRow { display: contents; }
+  .metaKey { color: #888; font-size: 11px; text-transform: uppercase;
+    letter-spacing: .04em; }
+  .metaValue { font-size: 12px; font-family: monospace; word-break: break-word; }
+  .calls { border-bottom: 1px solid #eee; padding: 8px 16px; background: #fcfcfc; }
+  .calls summary { cursor: pointer; color: #888; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .04em; }
+  .call { display: flex; align-items: baseline; gap: 8px; padding: 3px 0;
+    font-family: monospace; font-size: 11px; line-height: 1.5; }
+  .call:first-of-type { margin-top: 8px; }
+  .callNum { color: #aaa; min-width: 16px; text-align: right; flex-shrink: 0; }
+  .callName { color: #1565c0; font-weight: 600; min-width: 56px; flex-shrink: 0; }
+  .callInput { word-break: break-word; white-space: pre-wrap; }
+  .report { padding: 16px; }
+
+  .report { font-size: 14px; line-height: 1.55; color: #333; }
+  .report h2 { font-size: 17px; margin: 18px 0 8px; }
+  .report h3 { font-size: 15px; margin: 14px 0 6px; }
+  .report > :first-child { margin-top: 0; }
+  .report table { border-collapse: collapse; max-width: 100%; }
+  .report th, .report td { border: 1px solid #ddd; padding: 6px 10px; text-align: left; }
+  .report th { background: #f5f5f5; }
+  .report svg { max-width: 100%; height: auto; }
+  .report pre { white-space: pre-wrap; word-break: break-word; }
+  /* Markdown reports reach tags the HTML ones never used. */
+  .report h1 { font-size: 19px; margin: 0 0 10px; }
+  .report p { margin: 8px 0; }
+  .report ul, .report ol { margin: 8px 0; padding-left: 22px; }
+  .report li { margin: 3px 0; }
+  .report code { background: #f2f4f6; padding: 1px 5px; border-radius: 3px;
+    font-family: 'SFMono-Regular', Consolas, Menlo, monospace; font-size: 12.5px; }
+  .report hr { border: none; border-top: 1px solid #e0e0e0; margin: 16px 0; }
+  .report a { color: #1565c0; }
+
+  @media (max-width: 1100px) { .grid { grid-template-columns: 1fr; }
+    .colHead { position: static; } }
+  @media print { body { background: #fff; }
+    .col { border: none; break-inside: avoid; }
+    .colHead { position: static; } }
+</style></head>
+<body>
+  <div class="topbar">
+    <h1>justinsohn@tutanota.com — 3 versions compared</h1>
+    <div class="sub">
+      <span>patient 54ea6c65-6adf-456e-b194-91f575aadfee</span>
+      <span>clinic a8173f91-cc6e-403b-97bc-c7544e60df6d</span>
+    </div>
+    <div class="pills"><span class="pill">1. -OZQiyFqWBm_nxbDg2aj</span><span class="pill">2. -OrtT0767PsaYwKneupH</span></div>
+  </div>
+  <div class="grid"><section class="col">
+  <header class="colHead">
+    <div class="colTitle">
+      <span class="badge">v4</span>
+      <span class="engine">Messages</span>
+    </div>
+    <div class="meta"><div class="metaRow"><span class="metaKey">When</span><span class="metaValue">08 Sep 2026 18:41</span></div><div class="metaRow"><span class="metaKey">Engine</span><span class="metaValue">Messages</span></div><div class="metaRow"><span class="metaKey">Model</span><span class="metaValue">claude-opus-5</span></div><div class="metaRow"><span class="metaKey">Run time</span><span class="metaValue">455.8 s</span></div><div class="metaRow"><span class="metaKey">Turns</span><span class="metaValue">1</span></div><div class="metaRow"><span class="metaKey">Tool calls</span><span class="metaValue">0</span></div><div class="metaRow"><span class="metaKey">Tokens</span><span class="metaValue">12,929 in (4,767 cache write, 8,162 new) · 44,322 out</span></div><div class="metaRow"><span class="metaKey">Cost</span><span class="metaValue">$1.18 (estimated)</span></div><div class="metaRow"><span class="metaKey">Effort</span><span class="metaValue">high</span></div><div class="metaRow"><span class="metaKey">Thinking</span><span class="metaValue">Enabled</span></div><div class="metaRow"><span class="metaKey">Tools available</span><span class="metaValue">none</span></div><div class="metaRow"><span class="metaKey">Tools used</span><span class="metaValue">none</span></div><div class="metaRow"><span class="metaKey">Analysis source</span><span class="metaValue">not provided</span></div></div>
+  </header>
+  
+  <div class="report"><div style="background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.5;padding:18px;max-width:960px;margin:0 auto;border-radius:14px;">
+
+  <!-- HEADER -->
+  <div style="border-bottom:1px solid #262c36;padding-bottom:14px;margin-bottom:18px;">
+    <div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8b949e;">Progress comparison &middot; 33-year-old male</div>
+    <h1 style="font-size:23px;margin:6px 0 8px;font-weight:650;">Feeling better and testing sharper &mdash; but anxiety and the EEG picture went the other way</h1>
+    <div style="font-size:13px;color:#8b949e;">
+      <span style="display:inline-block;margin-right:14px;">&#9675; Assessment 1 &middot; 5 Sep 2025</span>
+      <span style="display:inline-block;margin-right:14px;">&#9679; Assessment 2 &middot; 5 May 2026</span>
+      <span style="display:inline-block;">242 days apart</span>
+    </div>
+  </div>
+
+  <!-- TAKEAWAY CARDS -->
+  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px;">
+    <div style="flex:1 1 210px;background:#161b23;border:1px solid #262c36;border-left:3px solid #3fb950;border-radius:10px;padding:12px 14px;">
+      <div style="font-size:12px;color:#3fb950;font-weight:650;margin-bottom:4px;">GENERAL WELLBEING &#9660;</div>
+      <div style="font-size:20px;font-weight:650;">GHQ-12: 11 &rarr; 4</div>
+      <div style="font-size:12px;color:#8b949e;margin-top:4px;">Largest self-report change. Depression score also down (9 &rarr; 7).</div>
+    </div>
+    <div style="flex:1 1 210px;background:#161b23;border:1px solid #262c36;border-left:3px solid #3fb950;border-radius:10px;padding:12px 14px;">
+      <div style="font-size:12px;color:#3fb950;font-weight:650;margin-bottom:4px;">ATTENTION TASK &#9660;</div>
+      <div style="font-size:20px;font-weight:650;">&minus;18% reaction time</div>
+      <div style="font-size:12px;color:#8b949e;margin-top:4px;">Responses 36% more consistent, with accuracy kept at ~99.7%.</div>
+    </div>
+    <div style="flex:1 1 210px;background:#161b23;border:1px solid #262c36;border-left:3px solid #d29922;border-radius:10px;padding:12px 14px;">
+      <div style="font-size:12px;color:#d29922;font-weight:650;margin-bottom:4px;">ANXIETY &#9650;</div>
+      <div style="font-size:20px;font-weight:650;">GAD-7: 11 &rarr; 13</div>
+      <div style="font-size:12px;color:#8b949e;margin-top:4px;">Above the &le;10 &ldquo;good&rdquo; cut-off at both visits; the only symptom area that rose.</div>
+    </div>
+    <div style="flex:1 1 210px;background:#161b23;border:1px solid #262c36;border-left:3px solid #58a6ff;border-radius:10px;padding:12px 14px;">
+      <div style="font-size:12px;color:#58a6ff;font-weight:650;margin-bottom:4px;">EEG &#9679; NEEDS VERIFYING</div>
+      <div style="font-size:20px;font-weight:650;">Broad slow-wave shift</div>
+      <div style="font-size:12px;color:#8b949e;margin-top:4px;">Nearly every sensor and band moved the same way &mdash; a pattern that can reflect recording state, not only brain change.</div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: QUESTIONNAIRES -->
+  <div style="display:flex;align-items:center;gap:9px;margin:0 0 4px;">
+    <span style="width:4px;height:18px;background:#3fb950;border-radius:2px;display:inline-block;"></span>
+    <h2 style="font-size:16px;margin:0;font-weight:650;">1. What the patient reported</h2>
+  </div>
+  <p style="font-size:13px;color:#8b949e;margin:0 0 14px 13px;">Green shading = the score range the reference material calls &ldquo;good&rdquo;. &#9675; first visit, &#9679; second visit.</p>
+
+  <div style="background:#161b23;border:1px solid #262c36;border-radius:12px;padding:14px 16px;margin-bottom:26px;">
+
+    <!-- GHQ-12 -->
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px;border-bottom:1px solid #21262d;padding-bottom:10px;margin-bottom:10px;">
+      <div style="flex:0 1 170px;min-width:150px;">
+        <div style="font-size:13px;font-weight:600;">General health (GHQ-12)</div>
+        <div style="font-size:11px;color:#8b949e;">0&ndash;36, lower is better</div>
+        <div style="display:inline-block;margin-top:4px;font-size:11px;font-weight:650;color:#3fb950;background:rgba(63,185,80,.12);border-radius:20px;padding:2px 8px;">&minus;7 improved</div>
+      </div>
+      <svg viewBox="0 0 440 56" style="flex:1 1 260px;min-width:230px;height:auto;">
+        <rect x="14" y="22" width="412" height="10" rx="5" fill="#21262d"/>
+        <rect x="14" y="22" width="137.3" height="10" rx="5" fill="rgba(63,185,80,.30)"/>
+        <line x1="151.3" y1="18" x2="151.3" y2="36" stroke="#3fb950" stroke-width="1.4" stroke-dasharray="3,2"/>
+        <text x="155" y="53" font-size="9.5" fill="#6e7681">good &#8804;12</text>
+        <line x1="59.8" y1="27" x2="139.9" y2="27" stroke="#3fb950" stroke-width="2"/>
+        <circle cx="139.9" cy="27" r="6" fill="#0d1117" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="59.8" cy="27" r="7" fill="#3fb950"/>
+        <text x="139.9" y="14" font-size="12" fill="#8b949e" text-anchor="middle">11</text>
+        <text x="59.8" y="47" font-size="12.5" fill="#3fb950" text-anchor="middle" font-weight="700">4</text>
+        <text x="14" y="53" font-size="9" fill="#6e7681">0</text>
+        <text x="426" y="53" font-size="9" fill="#6e7681" text-anchor="end">36</text>
+      </svg>
+    </div>
+
+    <!-- PHQ-9 -->
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px;border-bottom:1px solid #21262d;padding-bottom:10px;margin-bottom:10px;">
+      <div style="flex:0 1 170px;min-width:150px;">
+        <div style="font-size:13px;font-weight:600;">Depression (PHQ-9)</div>
+        <div style="font-size:11px;color:#8b949e;">0&ndash;27, lower is better</div>
+        <div style="display:inline-block;margin-top:4px;font-size:11px;font-weight:650;color:#3fb950;background:rgba(63,185,80,.12);border-radius:20px;padding:2px 8px;">&minus;2 improved</div>
+      </div>
+      <svg viewBox="0 0 440 56" style="flex:1 1 260px;min-width:230px;height:auto;">
+        <rect x="14" y="22" width="412" height="10" rx="5" fill="#21262d"/>
+        <rect x="14" y="22" width="152.6" height="10" rx="5" fill="rgba(63,185,80,.22)"/>
+        <rect x="14" y="22" width="76.3" height="10" rx="5" fill="rgba(63,185,80,.42)"/>
+        <line x1="166.6" y1="18" x2="166.6" y2="36" stroke="#3fb950" stroke-width="1.4" stroke-dasharray="3,2"/>
+        <line x1="90.3" y1="18" x2="90.3" y2="36" stroke="#3fb950" stroke-width="1" stroke-dasharray="2,2"/>
+        <text x="170" y="53" font-size="9.5" fill="#6e7681">good &#8804;10 &middot; better &#8804;5</text>
+        <line x1="120.8" y1="27" x2="151.3" y2="27" stroke="#3fb950" stroke-width="2"/>
+        <circle cx="151.3" cy="27" r="6" fill="#0d1117" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="120.8" cy="27" r="7" fill="#3fb950"/>
+        <text x="151.3" y="14" font-size="12" fill="#8b949e" text-anchor="middle">9</text>
+        <text x="120.8" y="47" font-size="12.5" fill="#3fb950" text-anchor="middle" font-weight="700">7</text>
+        <text x="14" y="53" font-size="9" fill="#6e7681">0</text>
+        <text x="426" y="53" font-size="9" fill="#6e7681" text-anchor="end">27</text>
+      </svg>
+    </div>
+
+    <!-- GAD-7 -->
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px;border-bottom:1px solid #21262d;padding-bottom:10px;margin-bottom:10px;">
+      <div style="flex:0 1 170px;min-width:150px;">
+        <div style="font-size:13px;font-weight:600;">Anxiety (GAD-7)</div>
+        <div style="font-size:11px;color:#8b949e;">0&ndash;21, lower is better</div>
+        <div style="display:inline-block;margin-top:4px;font-size:11px;font-weight:650;color:#d29922;background:rgba(210,153,34,.14);border-radius:20px;padding:2px 8px;">+2 worsened</div>
+      </div>
+      <svg viewBox="0 0 440 56" style="flex:1 1 260px;min-width:230px;height:auto;">
+        <rect x="14" y="22" width="412" height="10" rx="5" fill="#21262d"/>
+        <rect x="14" y="22" width="196.2" height="10" rx="5" fill="rgba(63,185,80,.22)"/>
+        <rect x="14" y="22" width="98.1" height="10" rx="5" fill="rgba(63,185,80,.42)"/>
+        <line x1="210.2" y1="18" x2="210.2" y2="36" stroke="#3fb950" stroke-width="1.4" stroke-dasharray="3,2"/>
+        <line x1="112.1" y1="18" x2="112.1" y2="36" stroke="#3fb950" stroke-width="1" stroke-dasharray="2,2"/>
+        <text x="14" y="53" font-size="9.5" fill="#6e7681">good &#8804;10 &middot; better &#8804;5</text>
+        <line x1="229.8" y1="27" x2="269" y2="27" stroke="#d29922" stroke-width="2"/>
+        <circle cx="229.8" cy="27" r="6" fill="#0d1117" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="269" cy="27" r="7" fill="#d29922"/>
+        <text x="229.8" y="14" font-size="12" fill="#8b949e" text-anchor="middle">11</text>
+        <text x="269" y="47" font-size="12.5" fill="#d29922" text-anchor="middle" font-weight="700">13</text>
+        <text x="426" y="53" font-size="9" fill="#6e7681" text-anchor="end">21</text>
+      </svg>
+    </div>
+
+    <!-- ASRS -->
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px;">
+      <div style="flex:0 1 170px;min-width:150px;">
+        <div style="font-size:13px;font-weight:600;">ADHD screen (ASRS)</div>
+        <div style="font-size:11px;color:#8b949e;">0&ndash;24, lower is better</div>
+        <div style="display:inline-block;margin-top:4px;font-size:11px;font-weight:650;color:#8b949e;background:rgba(139,148,158,.14);border-radius:20px;padding:2px 8px;">+1 essentially unchanged</div>
+      </div>
+      <svg viewBox="0 0 440 56" style="flex:1 1 260px;min-width:230px;height:auto;">
+        <rect x="14" y="22" width="412" height="10" rx="5" fill="#21262d"/>
+        <rect x="14" y="22" width="240.3" height="10" rx="5" fill="rgba(63,185,80,.30)"/>
+        <line x1="254.3" y1="18" x2="254.3" y2="36" stroke="#3fb950" stroke-width="1.4" stroke-dasharray="3,2"/>
+        <text x="258" y="53" font-size="9.5" fill="#6e7681">good &#8804;14</text>
+        <line x1="185.7" y1="27" x2="202.8" y2="27" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="185.7" cy="27" r="6" fill="#0d1117" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="202.8" cy="27" r="7" fill="#8b949e"/>
+        <text x="185.7" y="14" font-size="12" fill="#8b949e" text-anchor="middle">10</text>
+        <text x="202.8" y="47" font-size="12.5" fill="#c9d1d9" text-anchor="middle" font-weight="700">11</text>
+        <text x="14" y="53" font-size="9" fill="#6e7681">0</text>
+        <text x="426" y="53" font-size="9" fill="#6e7681" text-anchor="end">24</text>
+      </svg>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;">
+      <div style="flex:1 1 260px;background:#0d1117;border:1px solid #21262d;border-radius:8px;padding:10px 12px;font-size:12.5px;color:#c9d1d9;">
+        <strong style="color:#3fb950;">Improved item-by-item:</strong> concentration, decision-making, enjoying daily activities and feeling useful all moved from &ldquo;same as usual&rdquo; to &ldquo;better than usual&rdquo;. Impact of symptoms on work/home/relationships fell from <em>very difficult</em> to <em>somewhat difficult</em>.
+      </div>
+      <div style="flex:1 1 260px;background:#0d1117;border:1px solid #21262d;border-radius:8px;padding:10px 12px;font-size:12.5px;color:#c9d1d9;">
+        <strong style="color:#d29922;">The persistent thread &mdash; tension:</strong> feeling on edge and irritability stayed at <em>nearly every day</em> in both visits; worry spread to &ldquo;different things&rdquo; and trouble relaxing rose. Difficulty unwinding was rated <em>often</em> on the ASRS both times. Low energy also rose (PHQ-9).
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: CPT -->
+  <div style="display:flex;align-items:center;gap:9px;margin:0 0 4px;">
+    <span style="width:4px;height:18px;background:#58a6ff;border-radius:2px;display:inline-block;"></span>
+    <h2 style="font-size:16px;margin:0;font-weight:650;">2. Attention task (8-minute Go/No-Go)</h2>
+  </div>
+  <p style="font-size:13px;color:#8b949e;margin:0 0 14px 13px;">Plotted as normative scores (z), where higher = better performance than the comparison group. 0 = average.</p>
+
+  <div style="background:#161b23;border:1px solid #262c36;border-radius:12px;padding:14px 16px;margin-bottom:26px;">
+    <svg viewBox="0 0 440 250" style="width:100%;height:auto;">
+      <line x1="150" y1="30" x2="150" y2="236" stroke="#21262d" stroke-width="1"/>
+      <line x1="243.3" y1="30" x2="243.3" y2="236" stroke="#30363d" stroke-width="1.2"/>
+      <line x1="336.7" y1="30" x2="336.7" y2="236" stroke="#21262d" stroke-width="1"/>
+      <line x1="430" y1="30" x2="430" y2="236" stroke="#21262d" stroke-width="1"/>
+      <text x="150" y="22" font-size="9.5" fill="#6e7681" text-anchor="middle">&minus;1</text>
+      <text x="243.3" y="22" font-size="9.5" fill="#8b949e" text-anchor="middle">0 &middot; average</text>
+      <text x="336.7" y="22" font-size="9.5" fill="#6e7681" text-anchor="middle">+1</text>
+      <text x="430" y="22" font-size="9.5" fill="#6e7681" text-anchor="end">+2</text>
+
+      <!-- Reaction time -->
+      <text x="0" y="46" font-size="12" fill="#e6edf3" font-weight="650">Reaction time</text>
+      <text x="0" y="59" font-size="10.5" fill="#8b949e">443 &rarr; 363 ms (&minus;18%)</text>
+      <line x1="221.9" y1="50" x2="366.5" y2="50" stroke="#3fb950" stroke-width="2.5"/>
+      <circle cx="221.9" cy="50" r="6" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+      <circle cx="366.5" cy="50" r="7.5" fill="#3fb950"/>
+
+      <!-- RT variability -->
+      <text x="0" y="88" font-size="12" fill="#e6edf3" font-weight="650">Response variability</text>
+      <text x="0" y="101" font-size="10.5" fill="#8b949e">54.3 &rarr; 34.8 ms (&minus;36%)</text>
+      <line x1="327.3" y1="92" x2="387.1" y2="92" stroke="#3fb950" stroke-width="2.5"/>
+      <circle cx="327.3" cy="92" r="6" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+      <circle cx="387.1" cy="92" r="7.5" fill="#3fb950"/>
+
+      <!-- Accuracy -->
+      <text x="0" y="130" font-size="12" fill="#e6edf3" font-weight="650">Accuracy</text>
+      <text x="0" y="143" font-size="10.5" fill="#8b949e">99.50 &rarr; 99.75%</text>
+      <line x1="309.6" y1="134" x2="317.1" y2="134" stroke="#8b949e" stroke-width="2.5"/>
+      <circle cx="309.6" cy="134" r="6" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+      <circle cx="317.1" cy="134" r="7.5" fill="#8b949e"/>
+
+      <!-- Commission -->
+      <text x="0" y="172" font-size="12" fill="#e6edf3" font-weight="650">Commission errors</text>
+      <text x="0" y="185" font-size="10.5" fill="#8b949e">2 &rarr; 1 (impulsive responses)</text>
+      <line x1="297.5" y1="176" x2="307.7" y2="176" stroke="#8b949e" stroke-width="2.5"/>
+      <circle cx="297.5" cy="176" r="6" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+      <circle cx="307.7" cy="176" r="7.5" fill="#8b949e"/>
+
+      <!-- Omission -->
+      <text x="0" y="214" font-size="12" fill="#e6edf3" font-weight="650">Omission errors</text>
+      <text x="0" y="227" font-size="10.5" fill="#8b949e">0 &rarr; 0 (missed targets)</text>
+      <circle cx="281.6" cy="218" r="7.5" fill="#8b949e"/>
+      <circle cx="281.6" cy="218" r="3" fill="#161b23"/>
+    </svg>
+    <p style="font-size:12.5px;color:#c9d1d9;margin:8px 0 0;">Speed and consistency both improved substantially without any loss of accuracy &mdash; so this is not a speed-for-accuracy trade-off. Accuracy and error counts were already near ceiling at the first visit, leaving little room to change. <span style="color:#8b949e;">Practice effects from repeating the same task cannot be ruled out.</span></p>
+  </div>
+
+  <!-- SECTION 3: EEG CHECKS -->
+  <div style="display:flex;align-items:center;gap:9px;margin:0 0 4px;">
+    <span style="width:4px;height:18px;background:#f0883e;border-radius:2px;display:inline-block;"></span>
+    <h2 style="font-size:16px;margin:0;font-weight:650;">3. EEG checks</h2>
+  </div>
+  <p style="font-size:13px;color:#8b949e;margin:0 0 14px 13px;">Theta/beta ratios &mdash; associated with focus, impulse control and emotional volatility &mdash; rose at every site measured.</p>
+
+  <div style="background:#161b23;border:1px solid #262c36;border-radius:12px;padding:14px 16px;margin-bottom:14px;">
+    <svg viewBox="0 0 440 200" style="width:100%;height:auto;">
+      <rect x="150" y="30" width="88" height="156" fill="rgba(63,185,80,.10)"/>
+      <line x1="238" y1="30" x2="238" y2="186" stroke="#3fb950" stroke-width="1.3" stroke-dasharray="3,2"/>
+      <line x1="270" y1="30" x2="270" y2="186" stroke="#3fb950" stroke-width="1" stroke-dasharray="2,3" opacity=".55"/>
+      <text x="150" y="22" font-size="9.5" fill="#6e7681" text-anchor="middle">0</text>
+      <text x="230" y="22" font-size="9.5" fill="#3fb950" text-anchor="middle">2.2 normal limit</text>
+      <text x="310" y="22" font-size="9.5" fill="#6e7681" text-anchor="middle">4</text>
+      <text x="390" y="22" font-size="9.5" fill="#6e7681" text-anchor="middle">6</text>
+
+      <text x="0" y="42" font-size="11.5" fill="#e6edf3" font-weight="650">Central, eyes open</text>
+      <text x="0" y="54" font-size="10" fill="#8b949e">2.90 &rarr; 4.15</text>
+      <line x1="266" y1="46" x2="316" y2="46" stroke="#d29922" stroke-width="2.5"/>
+      <circle cx="266" cy="46" r="5.5" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+      <circle cx="316" cy="46" r="7" fill="#d29922"/>
+
+      <text x="0" y="82" font-size="11.5" fill="#e6edf3" font-weight="650">Frontal left, eyes closed</text>
+      <text x="0" y="94" font-size="10" fill="#8b949e">3.05 &rarr; 4.57</text>
+      <line x1="272" y1="86" x2="332.8" y2="86" stroke="#d29922" stroke-width="2.5"/>
+      <circle cx="272" cy="86" r="5.5" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+      <circle cx="332.8" cy="86" r="7" fill="#d29922"/>
+
+      <text x="0" y="122" font-size="11.5" fill="#e6edf3" font-weight="650">Frontal right, eyes closed</text>
+      <text x="0" y="134" font-size="10" fill="#8b949e">2.33 &rarr; 6.16</text>
+      <line x1="243.2" y1="126" x2="396.4" y2="126" stroke="#f85149" stroke-width="2.5"/>
+      <circle cx="243.2" cy="126" r="5.5" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+      <circle cx="396.4" cy="126" r="7" fill="#f85149"/>
+
+      <text x="0" y="162" font-size="11.5" fill="#e6edf3" font-weight="650">Central, while counting</text>
+      <text x="0" y="174" font-size="10" fill="#8b949e">2.55 &rarr; 4.96 (good &#8804;3)</text>
+      <line x1="252" y1="166" x2="348.4" y2="166" stroke="#d29922" stroke-width="2.5"/>
+      <circle cx="252" cy="166" r="5.5" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+      <circle cx="348.4" cy="166" r="7" fill="#d29922"/>
+    </svg>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;">
+
+    <div style="flex:1 1 250px;background:#161b23;border:1px solid #262c36;border-radius:12px;padding:12px 14px;">
+      <div style="font-size:12.5px;font-weight:650;">Peak alpha speed (central) <span style="color:#d29922;">9 &rarr; 8 Hz</span></div>
+      <div style="font-size:11px;color:#8b949e;margin-bottom:2px;">Below the &gt;9.5 Hz normal at both visits, slower now.</div>
+      <svg viewBox="0 0 300 46" style="width:100%;height:auto;">
+        <rect x="14" y="16" width="272" height="9" rx="4.5" fill="#21262d"/>
+        <rect x="122.8" y="16" width="163.2" height="9" rx="4.5" fill="rgba(63,185,80,.28)"/>
+        <line x1="122.8" y1="12" x2="122.8" y2="29" stroke="#3fb950" stroke-width="1.3" stroke-dasharray="3,2"/>
+        <line x1="41.2" y1="20.5" x2="95.6" y2="20.5" stroke="#d29922" stroke-width="2"/>
+        <circle cx="95.6" cy="20.5" r="5.5" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="41.2" cy="20.5" r="6.5" fill="#d29922"/>
+        <text x="14" y="40" font-size="9" fill="#6e7681">7.5 Hz</text>
+        <text x="126" y="40" font-size="9" fill="#3fb950">normal &gt;9.5</text>
+        <text x="286" y="40" font-size="9" fill="#6e7681" text-anchor="end">12.5 Hz</text>
+      </svg>
+    </div>
+
+    <div style="flex:1 1 250px;background:#161b23;border:1px solid #262c36;border-radius:12px;padding:12px 14px;">
+      <div style="font-size:12.5px;font-weight:650;">Slow/fast alpha (frontal) <span style="color:#d29922;">2.01 &rarr; 3.24</span></div>
+      <div style="font-size:11px;color:#8b949e;margin-bottom:2px;">Moved out of the &#8804;2.3 &ldquo;good&rdquo; band.</div>
+      <svg viewBox="0 0 300 46" style="width:100%;height:auto;">
+        <rect x="14" y="16" width="272" height="9" rx="4.5" fill="#21262d"/>
+        <rect x="14" y="16" width="125.1" height="9" rx="4.5" fill="rgba(63,185,80,.20)"/>
+        <rect x="14" y="16" width="81.6" height="9" rx="4.5" fill="rgba(63,185,80,.40)"/>
+        <line x1="139.1" y1="12" x2="139.1" y2="29" stroke="#3fb950" stroke-width="1.3" stroke-dasharray="3,2"/>
+        <line x1="123.3" y1="20.5" x2="190.3" y2="20.5" stroke="#d29922" stroke-width="2"/>
+        <circle cx="123.3" cy="20.5" r="5.5" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="190.3" cy="20.5" r="6.5" fill="#d29922"/>
+        <text x="14" y="40" font-size="9" fill="#6e7681">0</text>
+        <text x="143" y="40" font-size="9" fill="#3fb950">good &#8804;2.3</text>
+        <text x="286" y="40" font-size="9" fill="#6e7681" text-anchor="end">5</text>
+      </svg>
+    </div>
+
+    <div style="flex:1 1 250px;background:#161b23;border:1px solid #262c36;border-radius:12px;padding:12px 14px;">
+      <div style="font-size:12.5px;font-weight:650;">Theta/beta symmetry (frontal) <span style="color:#d29922;">1.31 &rarr; 0.74</span></div>
+      <div style="font-size:11px;color:#8b949e;margin-bottom:2px;">Crossed just below the &gt;0.8 normal.</div>
+      <svg viewBox="0 0 300 46" style="width:100%;height:auto;">
+        <rect x="14" y="16" width="272" height="9" rx="4.5" fill="#21262d"/>
+        <rect x="122.8" y="16" width="163.2" height="9" rx="4.5" fill="rgba(63,185,80,.28)"/>
+        <line x1="122.8" y1="12" x2="122.8" y2="29" stroke="#3fb950" stroke-width="1.3" stroke-dasharray="3,2"/>
+        <line x1="114.6" y1="20.5" x2="192.2" y2="20.5" stroke="#d29922" stroke-width="2"/>
+        <circle cx="192.2" cy="20.5" r="5.5" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="114.6" cy="20.5" r="6.5" fill="#d29922"/>
+        <text x="14" y="40" font-size="9" fill="#6e7681">0</text>
+        <text x="126" y="40" font-size="9" fill="#3fb950">normal &gt;0.8</text>
+        <text x="286" y="40" font-size="9" fill="#6e7681" text-anchor="end">2</text>
+      </svg>
+    </div>
+
+    <div style="flex:1 1 250px;background:#161b23;border:1px solid #262c36;border-radius:12px;padding:12px 14px;">
+      <div style="font-size:12.5px;font-weight:650;">Beta response while counting <span style="color:#d29922;">+1% &rarr; &minus;16%</span></div>
+      <div style="font-size:11px;color:#8b949e;margin-bottom:2px;">Just past the &gt;&minus;15% normal edge.</div>
+      <svg viewBox="0 0 300 46" style="width:100%;height:auto;">
+        <rect x="14" y="16" width="272" height="9" rx="4.5" fill="#21262d"/>
+        <rect x="129.6" y="16" width="156.4" height="9" rx="4.5" fill="rgba(63,185,80,.28)"/>
+        <line x1="129.6" y1="12" x2="129.6" y2="29" stroke="#3fb950" stroke-width="1.3" stroke-dasharray="3,2"/>
+        <line x1="128.2" y1="20.5" x2="151.4" y2="20.5" stroke="#d29922" stroke-width="2"/>
+        <circle cx="151.4" cy="20.5" r="5.5" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="128.2" cy="20.5" r="6.5" fill="#d29922"/>
+        <text x="14" y="40" font-size="9" fill="#6e7681">&minus;100%</text>
+        <text x="133" y="40" font-size="9" fill="#3fb950">normal &gt;&minus;15%</text>
+        <text x="286" y="40" font-size="9" fill="#6e7681" text-anchor="end">+100%</text>
+      </svg>
+    </div>
+
+    <div style="flex:1 1 250px;background:#161b23;border:1px solid #262c36;border-radius:12px;padding:12px 14px;">
+      <div style="font-size:12.5px;font-weight:650;">Theta/low-beta (central) <span style="color:#8b949e;">1.88 &rarr; 2.88</span></div>
+      <div style="font-size:11px;color:#8b949e;margin-bottom:2px;">Still within &#8804;3, but close to the limit.</div>
+      <svg viewBox="0 0 300 46" style="width:100%;height:auto;">
+        <rect x="14" y="16" width="272" height="9" rx="4.5" fill="#21262d"/>
+        <rect x="14" y="16" width="163.2" height="9" rx="4.5" fill="rgba(63,185,80,.28)"/>
+        <line x1="177.2" y1="12" x2="177.2" y2="29" stroke="#3fb950" stroke-width="1.3" stroke-dasharray="3,2"/>
+        <line x1="116.3" y1="20.5" x2="170.7" y2="20.5" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="116.3" cy="20.5" r="5.5" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="170.7" cy="20.5" r="6.5" fill="#8b949e"/>
+        <text x="14" y="40" font-size="9" fill="#6e7681">0</text>
+        <text x="181" y="40" font-size="9" fill="#3fb950">normal &#8804;3</text>
+        <text x="286" y="40" font-size="9" fill="#6e7681" text-anchor="end">5</text>
+      </svg>
+    </div>
+
+    <div style="flex:1 1 250px;background:#161b23;border:1px solid #262c36;border-radius:12px;padding:12px 14px;">
+      <div style="font-size:12.5px;font-weight:650;">Beta balance (frontal) <span style="color:#8b949e;">0.59 &rarr; 0.42</span></div>
+      <div style="font-size:11px;color:#8b949e;margin-bottom:2px;">Remains inside 0.40&ndash;0.75, now near the lower edge.</div>
+      <svg viewBox="0 0 300 46" style="width:100%;height:auto;">
+        <rect x="14" y="16" width="272" height="9" rx="4.5" fill="#21262d"/>
+        <rect x="122.8" y="16" width="95.2" height="9" rx="4.5" fill="rgba(63,185,80,.28)"/>
+        <line x1="122.8" y1="12" x2="122.8" y2="29" stroke="#3fb950" stroke-width="1.3" stroke-dasharray="3,2"/>
+        <line x1="218" y1="12" x2="218" y2="29" stroke="#3fb950" stroke-width="1.3" stroke-dasharray="3,2"/>
+        <line x1="128.2" y1="20.5" x2="174.5" y2="20.5" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="174.5" cy="20.5" r="5.5" fill="#161b23" stroke="#8b949e" stroke-width="2"/>
+        <circle cx="128.2" cy="20.5" r="6.5" fill="#8b949e"/>
+        <text x="14" y="40" font-size="9" fill="#6e7681">0</text>
+        <text x="126" y="40" font-size="9" fill="#3fb950">0.40&ndash;0.75</text>
+        <text x="286" y="40" font-size="9" fill="#6e7681" text-anchor="end">1</text>
+      </svg>
+    </div>
+  </div>
+
+  <div style="background:#161b23;border:1px solid #262c36;border-radius:12px;padding:12px 14px;margin-bottom:26px;">
+    <div style="font-size:12px;color:#3fb950;font-weight:650;margin-bottom:7px;">STAYED WITHIN NORMAL RANGE AT BOTH VISITS</div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;font-size:11.5px;color:#c9d1d9;">
+      <span style="background:#0d1117;border:1px solid #21262d;border-radius:20px;padding:3px 10px;">Alpha response 54% &rarr; 55%</span>
+      <span style="background:#0d1117;border:1px solid #21262d;border-radius:20px;padding:3px 10px;">Alpha recovery &minus;21% &rarr; &minus;4%</span>
+      <span style="background:#0d1117;border:1px solid #21262d;border-radius:20px;padding:3px 10px;">Alpha symmetry 0.96 &rarr; 0.96</span>
+      <span style="background:#0d1117;border:1px solid #21262d;border-radius:20px;padding:3px 10px;">Beta symmetry 0.94 &rarr; 1.24</span>
+      <span style="background:#0d1117;border:1px solid #21262d;border-radius:20px;padding:3px 10px;">Theta symmetry 1.23 &rarr; 0.92</span>
+      <span style="background:#0d1117;border:1px solid #21262d;border-radius:20px;padding:3px 10px;">Theta/alpha L 1.09 &rarr; 1.25</span>
+      <span style="background:#0d1117;border:1px solid #21262d;border-radius:20px;padding:3px 10px;">Theta/alpha R 0.85 &rarr; 1.31</span>
+      <span style="background:#0d1117;border:1px solid #21262d;border-radius:20px;padding:3px 10px;">Theta/beta response to counting 5% &rarr; 5%</span>
+    </div>
+    <p style="font-size:12.5px;color:#c9d1d9;margin:10px 0 0;">The eyes-open/eyes-closed alpha switching, which the reference material links to stress, was normal and stable across both sessions.</p>
+  </div>
+
+  <!-- SECTION 4: BRAINMAPS -->
+  <div style="display:flex;align-items:center;gap:9px;margin:0 0 4px;">
+    <span style="width:4px;height:18px;background:#58a6ff;border-radius:2px;display:inline-block;"></span>
+    <h2 style="font-size:16px;margin:0;font-weight:650;">4. Brainmap z-scores vs. same age/gender norms</h2>
+  </div>
+  <p style="font-size:13px;color:#8b949e;margin:0 0 14px 13px;">Averages across the <strong style="color:#c9d1d9;">six sensors recorded at both visits</strong> (Fp1, F3, Fz, F4, Cz, Tp10). 0 = typical for age and gender.</p>
+
+  <div style="background:#161b23;border:1px solid #262c36;border-radius:12px;padding:14px 16px;margin-bottom:14px;">
+    <div style="display:flex;flex-wrap:wrap;gap:16px;">
+
+      <div style="flex:1 1 300px;">
+        <div style="font-size:12.5px;font-weight:650;margin-bottom:4px;">Eyes open</div>
+        <svg viewBox="0 0 440 300" style="width:100%;height:auto;">
+          <line x1="121.6" y1="24" x2="121.6" y2="292" stroke="#21262d"/>
+          <line x1="173" y1="24" x2="173" y2="292" stroke="#21262d"/>
+          <line x1="224.4" y1="24" x2="224.4" y2="292" stroke="#484f58" stroke-width="1.3"/>
+          <line x1="275.8" y1="24" x2="275.8" y2="292" stroke="#21262d"/>
+          <line x1="327.2" y1="24" x2="327.2" y2="292" stroke="#21262d"/>
+          <line x1="378.6" y1="24" x2="378.6" y2="292" stroke="#21262d"/>
+          <line x1="430" y1="24" x2="430" y2="292" stroke="#21262d"/>
+          <text x="121.6" y="16" font-size="9" fill="#6e7681" text-anchor="middle">&minus;2</text>
+          <text x="224.4" y="16" font-size="9" fill="#8b949e" text-anchor="middle">0</text>
+          <text x="327.2" y="16" font-size="9" fill="#6e7681" text-anchor="middle">+2</text>
+          <text x="430" y="16" font-size="9" fill="#6e7681" text-anchor="end">+4</text>
+
+          <text x="0" y="43" font-size="10.5" fill="#c9d1d9">Delta 1&ndash;3</text>
+          <rect x="214.1" y="29" width="10.3" height="11" fill="#3b4453"/>
+          <rect x="151.4" y="42" width="73" height="11" fill="#38bdf8"/>
+          <text x="147" y="51" font-size="9" fill="#8b949e" text-anchor="end">&minus;1.42</text>
+
+          <text x="0" y="76" font-size="10.5" fill="#c9d1d9">Theta 4&ndash;7</text>
+          <rect x="224.4" y="62" width="55.5" height="11" fill="#3b4453"/>
+          <rect x="224.4" y="75" width="185.6" height="11" fill="#f0883e"/>
+          <text x="414" y="84" font-size="9.5" fill="#f0883e" font-weight="700">+3.61</text>
+
+          <text x="0" y="109" font-size="10.5" fill="#c9d1d9">Low alpha 8&ndash;9</text>
+          <rect x="224.4" y="95" width="41.1" height="11" fill="#3b4453"/>
+          <rect x="224.4" y="108" width="141.9" height="11" fill="#f0883e"/>
+          <text x="370" y="117" font-size="9.5" fill="#f0883e" font-weight="700">+2.76</text>
+
+          <text x="0" y="142" font-size="10.5" fill="#c9d1d9">Alpha 8&ndash;12</text>
+          <rect x="224.4" y="128" width="39.1" height="11" fill="#3b4453"/>
+          <rect x="224.4" y="141" width="71.5" height="11" fill="#f0883e"/>
+          <text x="300" y="150" font-size="9" fill="#8b949e">+1.39</text>
+
+          <text x="0" y="175" font-size="10.5" fill="#c9d1d9">High alpha 11&ndash;12</text>
+          <rect x="224.4" y="161" width="12.3" height="11" fill="#3b4453"/>
+          <rect x="169.4" y="174" width="55" height="11" fill="#38bdf8"/>
+          <text x="165" y="183" font-size="9" fill="#8b949e" text-anchor="end">&minus;1.07</text>
+
+          <text x="0" y="208" font-size="10.5" fill="#c9d1d9">Low beta 12&ndash;15</text>
+          <rect x="198.2" y="194" width="26.2" height="11" fill="#3b4453"/>
+          <rect x="130.3" y="207" width="94.1" height="11" fill="#38bdf8"/>
+          <text x="126" y="216" font-size="9" fill="#8b949e" text-anchor="end">&minus;1.83</text>
+
+          <text x="0" y="241" font-size="10.5" fill="#c9d1d9">Beta 16&ndash;20</text>
+          <rect x="190.5" y="227" width="33.9" height="11" fill="#3b4453"/>
+          <rect x="126.2" y="240" width="98.2" height="11" fill="#38bdf8"/>
+          <text x="122" y="249" font-size="9.5" fill="#38bdf8" text-anchor="end" font-weight="700">&minus;1.91</text>
+
+          <text x="0" y="274" font-size="10.5" fill="#c9d1d9">High beta 21&ndash;30</text>
+          <rect x="184.3" y="260" width="40.1" height="11" fill="#3b4453"/>
+          <rect x="144.4" y="273" width="80" height="11" fill="#38bdf8"/>
+          <text x="140" y="282" font-size="9" fill="#8b949e" text-anchor="end">&minus;1.56</text>
+        </svg>
+      </div>
+
+      <div style="flex:1 1 300px;">
+        <div style="font-size:12.5px;font-weight:650;margin-bottom:4px;">Eyes closed</div>
+        <svg viewBox="0 0 440 300" style="width:100%;height:auto;">
+          <line x1="121.6" y1="24" x2="121.6" y2="292" stroke="#21262d"/>
+          <line x1="173" y1="24" x2="173" y2="292" stroke="#21262d"/>
+          <line x1="224.4" y1="24" x2="224.4" y2="292" stroke="#484f58" stroke-width="1.3"/>
+          <line x1="275.8" y1="24" x2="275.8" y2="292" stroke="#21262d"/>
+          <line x1="327.2" y1="24" x2="327.2" y2="292" stroke="#21262d"/>
+          <line x1="378.6" y1="24" x2="378.6" y2="292" stroke="#21262d"/>
+          <line x1="430" y1="24" x2="430" y2="292" stroke="#21262d"/>
+          <text x="121.6" y="16" font-size="9" fill="#6e7681" text-anchor="middle">&minus;2</text>
+          <text x="224.4" y="16" font-size="9" fill="#8b949e" text-anchor="middle">0</text>
+          <text x="327.2" y="16" font-size="9" fill="#6e7681" text-anchor="middle">+2</text>
+          <text x="430" y="16" font-size="9" fill="#6e7681" text-anchor="end">+4</text>
+
+          <text x="0" y="43" font-size="10.5" fill="#c9d1d9">Delta 1&ndash;3</text>
+          <rect x="188.4" y="29" width="36" height="11" fill="#3b4453"/>
+          <rect x="159.2" y="42" width="65.2" height="11" fill="#38bdf8"/>
+          <text x="155" y="51" font-size="9" fill="#8b949e" text-anchor="end">&minus;1.27</text>
+
+          <text x="0" y="76" font-size="10.5" fill="#c9d1d9">Theta 4&ndash;7</text>
+          <rect x="224.4" y="62" width="27.8" height="11" fill="#3b4453"/>
+          <rect x="224.4" y="75" width="122.9" height="11" fill="#f0883e"/>
+          <text x="352" y="84" font-size="9.5" fill="#f0883e" font-weight="700">+2.39</text>
+
+          <text x="0" y="109" font-size="10.5" fill="#c9d1d9">Low alpha 8&ndash;9</text>
+          <rect x="224.4" y="95" width="76.6" height="11" fill="#3b4453"/>
+          <rect x="224.4" y="108" width="123.9" height="11" fill="#f0883e"/>
+          <text x="353" y="117" font-size="9.5" fill="#f0883e" font-weight="700">+2.41</text>
+
+          <text x="0" y="142" font-size="10.5" fill="#c9d1d9">Alpha 8&ndash;12</text>
+          <rect x="224.4" y="128" width="51.4" height="11" fill="#3b4453"/>
+          <rect x="224.4" y="141" width="49.4" height="11" fill="#f0883e"/>
+          <text x="278" y="150" font-size="9" fill="#8b949e">+0.96</text>
+
+          <text x="0" y="175" font-size="10.5" fill="#c9d1d9">High alpha 11&ndash;12</text>
+          <rect x="196.7" y="161" width="27.7" height="11" fill="#3b4453"/>
+          <rect x="170" y="174" width="54.4" height="11" fill="#38bdf8"/>
+          <text x="166" y="183" font-size="9" fill="#8b949e" text-anchor="end">&minus;1.06</text>
+
+          <text x="0" y="208" font-size="10.5" fill="#c9d1d9">Low beta 12&ndash;15</text>
+          <rect x="168.9" y="194" width="55.5" height="11" fill="#3b4453"/>
+          <rect x="159.7" y="207" width="64.7" height="11" fill="#38bdf8"/>
+          <text x="155" y="216" font-size="9" fill="#8b949e" text-anchor="end">&minus;1.26</text>
+
+          <text x="0" y="241" font-size="10.5" fill="#c9d1d9">Beta 16&ndash;20</text>
+          <rect x="181.8" y="227" width="42.6" height="11" fill="#3b4453"/>
+          <rect x="131.6" y="240" width="92.8" height="11" fill="#38bdf8"/>
+          <text x="128" y="249" font-size="9.5" fill="#38bdf8" text-anchor="end" font-weight="700">&minus;1.81</text>
+
+          <text x="0" y="274" font-size="10.5" fill="#c9d1d9">High beta 21&ndash;30</text>
+          <rect x="169.4" y="260" width="55" height="11" fill="#3b4453"/>
+          <rect x="137.5" y="273" width="86.9" height="11" fill="#38bdf8"/>
+          <text x="133" y="282" font-size="9" fill="#8b949e" text-anchor="end">&minus;1.69</text>
+        </svg>
+      </div>
+    </div>
+    <div style="font-size:11.5px;color:#8b949e;margin-top:8px;">
+      <span style="display:inline-block;width:11px;height:11px;background:#3b4453;border-radius:2px;vertical-align:-1px;"></span> Sep 2025 &nbsp;&nbsp;
+      <span style="display:inline-block;width:11px;height:11px;background:#f0883e;border-radius:2px;vertical-align:-1px;"></span> May 2026, above norm &nbsp;&nbsp;
+      <span style="display:inline-block;width:11px;height:11px;background:#38bdf8;border-radius:2px;vertical-align:-1px;"></span> May 2026, below norm
+      &nbsp;&middot;&nbsp; The composite slow-wave band (1&ndash;8 Hz) moved in the same upward direction (eyes open +0.55 &rarr; +1.45).
+    </div>
+  </div>
+
+  <!-- HEATMAP -->
+  <div style="background:#161b23;border:1px solid #262c36;border-radius:12px;padding:14px 16px;margin-bottom:14px;">
+    <div style="font-size:12.5px;font-weight:650;margin-bottom:2px;">Where it changed most (eyes open, z-scores per sensor)</div>
+    <div style="font-size:11.5px;color:#8b949e;margin-bottom:8px;">The rise is widespread rather than focal, and largest over the frontal sensors for theta.</div>
+    <svg viewBox="0 0 440 236" style="width:100%;height:auto;">
+      <text x="127" y="12" font-size="9.5" fill="#8b949e" text-anchor="middle">Fp1</text>
+      <text x="183" y="12" font-size="9.5" fill="#8b949e" text-anchor="middle">F3</text>
+      <text x="239" y="12" font-size="9.5" fill="#8b949e" text-anchor="middle">Fz</text>
+      <text x="295" y="12" font-size="9.5" fill="#8b949e" text-anchor="middle">F4</text>
+      <text x="351" y="12" font-size="9.5" fill="#8b949e" text-anchor="middle">Cz</text>
+      <text x="407" y="12" font-size="9.5" fill="#8b949e" text-anchor="middle">Tp10</text>
+
+      <!-- Theta Sep -->
+      <text x="0" y="36" font-size="9.5" fill="#8b949e">Theta &middot; Sep</text>
+      <rect x="100" y="20" width="54" height="26" rx="3" fill="#b39a55"/><text x="127" y="37" font-size="10" fill="#0d1117" text-anchor="middle">1.12</text>
+      <rect x="156" y="20" width="54" height="26" rx="3" fill="#b39a55"/><text x="183" y="37" font-size="10" fill="#0d1117" text-anchor="middle">1.06</text>
+      <rect x="212" y="20" width="54" height="26" rx="3" fill="#b39a55"/><text x="239" y="37" font-size="10" fill="#0d1117" text-anchor="middle">1.29</text>
+      <rect x="268" y="20" width="54" height="26" rx="3" fill="#e0a94a"/><text x="295" y="37" font-size="10" fill="#0d1117" text-anchor="middle">1.77</text>
+      <rect x="324" y="20" width="54" height="26" rx="3" fill="#b39a55"/><text x="351" y="37" font-size="10" fill="#0d1117" text-anchor="middle">1.16</text>
+      <rect x="380" y="20" width="54" height="26" rx="3" fill="#2f3540"/><text x="407" y="37" font-size="10" fill="#c9d1d9" text-anchor="middle">0.07</text>
+      <!-- Theta May -->
+      <text x="0" y="66" font-size="9.5" fill="#e6edf3" font-weight="650">Theta &middot; May</text>
+      <rect x="100" y="50" width="54" height="26" rx="3" fill="#ff9b42"/><text x="127" y="67" font-size="10" fill="#0d1117" text-anchor="middle">2.38</text>
+      <rect x="156" y="50" width="54" height="26" rx="3" fill="#ff3b30"/><text x="183" y="67" font-size="10" fill="#fff" text-anchor="middle">4.86</text>
+      <rect x="212" y="50" width="54" height="26" rx="3" fill="#ff3b30"/><text x="239" y="67" font-size="10" fill="#fff" text-anchor="middle">4.09</text>
+      <rect x="268" y="50" width="54" height="26" rx="3" fill="#ff3b30"/><text x="295" y="67" font-size="10" fill="#fff" text-anchor="middle">4.21</text>
+      <rect x="324" y="50" width="54" height="26" rx="3" fill="#ff9b42"/><text x="351" y="67" font-size="10" fill="#0d1117" text-anchor="middle">2.67</text>
+      <rect x="380" y="50" width="54" height="26" rx="3" fill="#ff6b3d"/><text x="407" y="67" font-size="10" fill="#0d1117" text-anchor="middle">3.44</text>
+
+      <!-- Low alpha Sep -->
+      <text x="0" y="102" font-size="9.5" fill="#8b949e">Low &#945; &middot; Sep</text>
+      <rect x="100" y="86" width="54" height="26" rx="3" fill="#e0a94a"/><text x="127" y="103" font-size="10" fill="#0d1117" text-anchor="middle">1.51</text>
+      <rect x="156" y="86" width="54" height="26" rx="3" fill="#b39a55"/><text x="183" y="103" font-size="10" fill="#0d1117" text-anchor="middle">1.42</text>
+      <rect x="212" y="86" width="54" height="26" rx="3" fill="#2f3540"/><text x="239" y="103" font-size="10" fill="#c9d1d9" text-anchor="middle">0.33</text>
+      <rect x="268" y="86" width="54" height="26" rx="3" fill="#2f3540"/><text x="295" y="103" font-size="10" fill="#c9d1d9" text-anchor="middle">&minus;0.09</text>
+      <rect x="324" y="86" width="54" height="26" rx="3" fill="#2f3540"/><text x="351" y="103" font-size="10" fill="#c9d1d9" text-anchor="middle">0.22</text>
+      <rect x="380" y="86" width="54" height="26" rx="3" fill="#b39a55"/><text x="407" y="103" font-size="10" fill="#0d1117" text-anchor="middle">1.39</text>
+      <!-- Low alpha May -->
+      <text x="0" y="132" font-size="9.5" fill="#e6edf3" font-weight="650">Low &#945; &middot; May</text>
+      <rect x="100" y="116" width="54" height="26" rx="3" fill="#ff3b30"/><text x="127" y="133" font-size="10" fill="#fff" text-anchor="middle">4.12</text>
+      <rect x="156" y="116" width="54" height="26" rx="3" fill="#ff9b42"/><text x="183" y="133" font-size="10" fill="#0d1117" text-anchor="middle">2.62</text>
+      <rect x="212" y="116" width="54" height="26" rx="3" fill="#b39a55"/><text x="239" y="133" font-size="10" fill="#0d1117" text-anchor="middle">1.21</text>
+      <rect x="268" y="116" width="54" height="26" rx="3" fill="#ff9b42"/><text x="295" y="133" font-size="10" fill="#0d1117" text-anchor="middle">2.49</text>
+      <rect x="324" y="116" width="54" height="26" rx="3" fill="#ff6b3d"/><text x="351" y="133" font-size="10" fill="#0d1117" text-anchor="middle">3.02</text>
+      <rect x="380" y="116" width="54" height="26" rx="3" fill="#ff6b3d"/><text x="407" y="133" font-size="10" fill="#0d1117" text-anchor="middle">3.11</text>
+
+      <!-- Beta Sep -->
+      <text x="0" y="168" font-size="9.5" fill="#8b949e">Beta &middot; Sep</text>
+      <rect x="100" y="152" width="54" height="26" rx="3" fill="#4a6b7a"/><text x="127" y="169" font-size="10" fill="#e6edf3" text-anchor="middle">&minus;0.83</text>
+      <rect x="156" y="152" width="54" height="26" rx="3" fill="#4a6b7a"/><text x="183" y="169" font-size="10" fill="#e6edf3" text-anchor="middle">&minus;0.74</text>
+      <rect x="212" y="152" width="54" height="26" rx="3" fill="#4a6b7a"/><text x="239" y="169" font-size="10" fill="#e6edf3" text-anchor="middle">&minus;0.70</text>
+      <rect x="268" y="152" width="54" height="26" rx="3" fill="#2f3540"/><text x="295" y="169" font-size="10" fill="#c9d1d9" text-anchor="middle">&minus;0.21</text>
+      <rect x="324" y="152" width="54" height="26" rx="3" fill="#3d87a8"/><text x="351" y="169" font-size="10" fill="#0d1117" text-anchor="middle">&minus;1.04</text>
+      <rect x="380" y="152" width="54" height="26" rx="3" fill="#2f3540"/><text x="407" y="169" font-size="10" fill="#c9d1d9" text-anchor="middle">&minus;0.45</text>
+      <!-- Beta May -->
+      <text x="0" y="198" font-size="9.5" fill="#e6edf3" font-weight="650">Beta &middot; May</text>
+      <rect x="100" y="182" width="54" height="26" rx="3" fill="#3d87a8"/><text x="127" y="199" font-size="10" fill="#0d1117" text-anchor="middle">&minus;1.36</text>
+      <rect x="156" y="182" width="54" height="26" rx="3" fill="#22b8e6"/><text x="183" y="199" font-size="10" fill="#0d1117" text-anchor="middle">&minus;2.32</text>
+      <rect x="212" y="182" width="54" height="26" rx="3" fill="#22b8e6"/><text x="239" y="199" font-size="10" fill="#0d1117" text-anchor="middle">&minus;2.11</text>
+      <rect x="268" y="182" width="54" height="26" rx="3" fill="#2f9fce"/><text x="295" y="199" font-size="10" fill="#0d1117" text-anchor="middle">&minus;1.98</text>
+      <rect x="324" y="182" width="54" height="26" rx="3" fill="#22b8e6"/><text x="351" y="199" font-size="10" fill="#0d1117" text-anchor="middle">&minus;2.20</text>
+      <rect x="380" y="182" width="54" height="26" rx="3" fill="#2f9fce"/><text x="407" y="199" font-size="10" fill="#0d1117" text-anchor="middle">&minus;1.49</text>
+
+      <text x="0" y="228" font-size="9" fill="#6e7681">Warm = above age/gender norm &nbsp; &middot; &nbsp; Cool = below norm &nbsp; &middot; &nbsp; Eyes-closed data followed the same direction.</text>
+    </svg>
+  </div>
+
+  <div style="background:rgba(88,166,255,.07);border:1px solid rgba(88,166,255,.35);border-radius:12px;padding:12px 14px;margin-bottom:26px;">
+    <div style="font-size:12px;color:#58a6ff;font-weight:650;margin-bottom:6px;">READ THIS BEFORE INTERPRETING THE EEG</div>
+    <p style="font-size:12.5px;color:#c9d1d9;margin:0 0 6px;">Almost every band at almost every sensor moved in the same direction (4&ndash;9 Hz up, everything faster and slower down). Several explanations are possible and cannot be separated from these two recordings alone:</p>
+    <ul style="font-size:12.5px;color:#c9d1d9;margin:0;padding-left:18px;">
+      <li>A genuine change in resting brain activity.</li>
+      <li>A different state during the second recording &mdash; e.g. drowsiness, fatigue, time of day, caffeine, sleep the night before. The slower peak alpha (9 &rarr; 8 Hz) and higher slow/fast alpha ratio fit a lower-arousal recording state.</li>
+      <li>Technical/setup differences: the second session used 8 sensors instead of 6 (Fp2 and Tp9 added), so headband fit and signal quality may differ. Tp9 has no baseline and shows an extreme eyes-open low-alpha value (z &asymp; +7.8), which warrants a signal-quality check.</li>
+    </ul>
+    <p style="font-size:12.5px;color:#c9d1d9;margin:6px 0 0;">Notably, the EEG direction is <em>opposite</em> to the measured attention performance, which improved. That mismatch is itself the reason to verify rather than interpret.</p>
+  </div>
+
+  <!-- VERDICT -->
+  <div style="background:#161b23;border:1px solid #30363d;border-radius:12px;padding:16px 18px;margin-bottom:14px;">
+    <div style="font-size:12px;letter-spacing:.12em;color:#8b949e;text-transform:uppercase;margin-bottom:6px;">Overall verdict</div>
+    <p style="font-size:14px;margin:0 0 8px;">Over 242 days this patient reports <strong style="color:#3fb950;">clearly better general functioning and less day-to-day interference</strong>, and objectively performs the attention task <strong style="color:#3fb950;">faster and far more consistently</strong> with no loss of accuracy. Depression symptoms are modestly lower and the ADHD screen is unchanged; both stay in the reference range described as &ldquo;good&rdquo;.</p>
+    <p style="font-size:14px;margin:0 0 8px;">The exception is <strong style="color:#d29922;">anxiety-type tension</strong>: GAD-7 rose from 11 to 13 and sits above the &le;10 cut-off at both visits, driven by broader worry and more trouble relaxing, with daily edginess and irritability unchanged. Lower energy is also newly more frequent.</p>
+    <p style="font-size:14px;margin:0;">The <strong style="color:#58a6ff;">EEG moved broadly toward slower activity</strong>, pushing several focus-related ratios out of their normal ranges. Because the shift is global, contradicts the task performance, and coincides with a changed recording montage, it should be treated as <strong>unconfirmed</strong> until repeated.</p>
+  </div>
+
+  <!-- NEXT STEPS -->
+  <div style="background:#161b23;border:1px solid #262c36;border-radius:12px;padding:16px 18px;margin-bottom:14px;">
+    <div style="font-size:12px;letter-spacing:.12em;color:#8b949e;text-transform:uppercase;margin-bottom:10px;">What deserves attention next</div>
+    <ol style="margin:0;padding-left:20px;font-size:13.5px;color:#e6edf3;">
+      <li style="margin-bottom:9px;"><strong>Explore the anxiety pattern in conversation.</strong> Worry has broadened and relaxing has become harder while mood improved &mdash; clarify what is driving tension now (context, sleep, workload, stimulant/caffeine intake) and whether a fuller anxiety assessment is warranted.</li>
+      <li style="margin-bottom:9px;"><strong>Repeat the EEG under standardised conditions</strong> before drawing conclusions from it: same sensor set, similar time of day, and a note on sleep, caffeine and alertness. Confirm whether the slow-wave pattern reproduces.</li>
+      <li style="margin-bottom:9px;"><strong>Check signal quality of the second recording</strong>, especially the newly added Tp9 and Fp2 sensors and the extreme Tp9 low-alpha value, and confirm the patient was not drowsy during acquisition.</li>
+      <li style="margin-bottom:9px;"><strong>Discuss the EEG&ndash;performance mismatch with the patient.</strong> How does concentration feel in real life at home and at work &mdash; closer to the improved test result or to the EEG picture?</li>
+      <li style="margin-bottom:9px;"><strong>Ask what changed in life circumstances.</strong> The GHQ-12 drop from 11 to 4 and the shift from &ldquo;very difficult&rdquo; to &ldquo;somewhat difficult&rdquo; functioning is large; understanding the context helps judge how durable it is.</li>
+      <li><strong>Track the borderline markers</strong> at the next review: peak alpha frequency, frontal slow/fast alpha, theta/low-beta and beta balance were near or just past their limits, and energy/fatigue reporting rose.</li>
+    </ol>
+  </div>
+
+  <p style="font-size:11px;color:#6e7681;margin:0;border-top:1px solid #21262d;padding-top:10px;">
+    All values come from the two assessments shown; no other data were used. Brainmap comparisons use only the six sensors present in both sessions; Fp2 and Tp9 (second session only) have no baseline and are excluded from all averages. Cut-offs shown are those supplied in the reference material; that material defines score ranges, not thresholds for meaningful <em>change</em>, so &ldquo;improved&rdquo; and &ldquo;worsened&rdquo; describe the direction and size of observed differences, not statistical or clinical significance. Questionnaires are self-report and reflect the preceding two weeks (GAD-7, PHQ-9). This report is a comparison aid, not a diagnosis or a treatment recommendation.
+  </p>
+</div></div>
+</section><section class="col">
+  <header class="colHead">
+    <div class="colTitle">
+      <span class="badge">v5</span>
+      <span class="engine">Messages</span>
+    </div>
+    <div class="meta"><div class="metaRow"><span class="metaKey">When</span><span class="metaValue">08 Sep 2026 18:41</span></div><div class="metaRow"><span class="metaKey">Engine</span><span class="metaValue">Messages</span></div><div class="metaRow"><span class="metaKey">Model</span><span class="metaValue">claude-opus-5</span></div><div class="metaRow"><span class="metaKey">Run time</span><span class="metaValue">438.2 s</span></div><div class="metaRow"><span class="metaKey">Turns</span><span class="metaValue">1</span></div><div class="metaRow"><span class="metaKey">Tool calls</span><span class="metaValue">0</span></div><div class="metaRow"><span class="metaKey">Tokens</span><span class="metaValue">12,929 in (4,767 cached, 8,162 new) · 38,917 out</span></div><div class="metaRow"><span class="metaKey">Cost</span><span class="metaValue">$1.02 (estimated)</span></div><div class="metaRow"><span class="metaKey">Effort</span><span class="metaValue">high</span></div><div class="metaRow"><span class="metaKey">Thinking</span><span class="metaValue">Enabled</span></div><div class="metaRow"><span class="metaKey">Tools available</span><span class="metaValue">none</span></div><div class="metaRow"><span class="metaKey">Tools used</span><span class="metaValue">none</span></div><div class="metaRow"><span class="metaKey">Analysis source</span><span class="metaValue">not provided</span></div></div>
+  </header>
+  
+  <div class="report"><div class="mlx">
+<style>
+.mlx{--bg:#0b1017;--panel:#141b25;--panel2:#111823;--line:#232d3c;--txt:#e6edf5;--mut:#8b98ad;--a1:#7b8ba6;--a2:#38bdf8;--good:#2ee6a8;--warn:#ffb020;background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;padding:18px;border-radius:14px;max-width:1080px;margin:0 auto;-webkit-font-smoothing:antialiased}
+.mlx *{box-sizing:border-box}
+.mlx h1{font-size:20px;margin:0 0 4px;letter-spacing:-.2px}
+.mlx h2{font-size:15px;margin:0;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);font-weight:700}
+.mlx h3{font-size:16px;margin:0 0 2px}
+.mlx h4{font-size:12px;margin:0 0 6px;color:var(--mut);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.mlx p{margin:0 0 8px}
+.mlx .sub{color:var(--mut);font-size:12.5px}
+.mlx .hdr{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+.mlx .dates{font-size:12.5px;color:var(--mut);text-align:right}
+.mlx .dates b{color:var(--txt);font-weight:600}
+.mlx .key{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--mut);margin-top:6px}
+.mlx .sw{display:inline-block;width:22px;height:8px;border-radius:4px;vertical-align:middle;margin-right:5px}
+.mlx .take{background:linear-gradient(180deg,#16202c,#121a24);border:1px solid var(--line);border-left:3px solid var(--a2);border-radius:12px;padding:14px 16px;margin-bottom:16px}
+.mlx .take p{font-size:14.5px;margin:0}
+.mlx .pills{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0 22px}
+.mlx .pill{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:10px 12px}
+.mlx .pill .lbl{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
+.mlx .pill .val{font-size:19px;font-weight:700;margin-top:3px;letter-spacing:-.4px}
+.mlx .pill .tag{font-size:11.5px;margin-top:2px}
+.mlx .g{color:var(--good)}.mlx .w{color:var(--warn)}.mlx .n{color:var(--mut)}
+.mlx section{margin-bottom:26px}
+.mlx .shead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:12px}
+.mlx .shead .note{font-size:12px;color:var(--mut)}
+.mlx .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:12px}
+.mlx .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 13px}
+.mlx .chead{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.mlx .ctitle{font-size:13px;font-weight:700}
+.mlx .chip{font-size:11px;font-weight:700;padding:2px 7px;border-radius:20px;white-space:nowrap}
+.mlx .chip.good{background:rgba(46,230,168,.14);color:var(--good)}
+.mlx .chip.warn{background:rgba(255,176,32,.14);color:var(--warn)}
+.mlx .chip.flat{background:rgba(139,152,173,.14);color:var(--mut)}
+.mlx .cnums{display:flex;align-items:baseline;gap:7px;margin:6px 0 2px}
+.mlx .v1{font-size:17px;color:var(--a1);font-weight:600}
+.mlx .ar{color:var(--mut);font-size:14px}
+.mlx .v2{font-size:24px;font-weight:700;color:var(--a2);letter-spacing:-.5px}
+.mlx .cunit{font-size:11.5px;color:var(--mut)}
+.mlx .cnote{font-size:12px;color:#b6c2d2;margin-top:4px}
+.mlx .czs{font-size:11px;color:var(--mut);margin-top:4px}
+.mlx svg{display:block;width:100%;height:auto}
+.mlx .wide{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px}
+.mlx .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:12px}
+.mlx table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:11.5px}
+.mlx th{text-align:left;color:var(--mut);font-weight:600;font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;padding:0 5px 6px 0;border-bottom:1px solid var(--line)}
+.mlx td{padding:6px 5px 6px 0;border-bottom:1px solid #1b2431;vertical-align:top}
+.mlx td .cond{display:block;color:var(--mut);font-size:10px}
+.mlx tr.flag td{background:rgba(255,176,32,.06)}
+.mlx .dot{display:inline-block;width:8px;height:8px;border-radius:50%}
+.mlx .num1{color:var(--a1);font-variant-numeric:tabular-nums}
+.mlx .num2{color:var(--a2);font-weight:700;font-variant-numeric:tabular-nums}
+.mlx ol{margin:6px 0 0;padding-left:20px}
+.mlx li{margin-bottom:7px;font-size:13.5px}
+.mlx .foot{font-size:11px;color:var(--mut);border-top:1px solid var(--line);padding-top:10px;margin-top:6px}
+.mlx .cav{background:rgba(255,176,32,.07);border:1px solid rgba(255,176,32,.28);border-radius:10px;padding:10px 12px;font-size:12.5px;color:#e7d4b3;margin-top:12px}
+.mlx .cav b{color:var(--warn)}
+</style>
+
+<div class="hdr">
+  <div>
+    <h1>Assessment comparison</h1>
+    <div class="sub">33-year-old male · questionnaires, EEG and attention task</div>
+    <div class="key">
+      <span><span class="sw" style="background:#7b8ba6"></span>Assessment 1 — 5 Sep 2025</span>
+      <span><span class="sw" style="background:#38bdf8"></span>Assessment 2 — 5 May 2026</span>
+    </div>
+  </div>
+  <div class="dates"><b>242 days</b> between sessions<br>Both sessions: same age band, same gender norms</div>
+</div>
+
+<div class="take">
+  <p><b>Main takeaway:</b> Day-to-day wellbeing improved substantially and attention-task performance got faster and much steadier. Two findings run against that trend: anxiety scores edged up and remain above the "good" range, and this EEG looks broadly <i>slower</i> than the first one — a pattern that does not match the sharper task performance and should be verified before it is interpreted.</p>
+</div>
+
+<div class="pills">
+  <div class="pill"><div class="lbl">General wellbeing</div><div class="val g">11 → 4</div><div class="tag g">GHQ-12 · clearly improved</div></div>
+  <div class="pill"><div class="lbl">Attention task</div><div class="val g">−18% / −36%</div><div class="tag g">Faster · far more consistent</div></div>
+  <div class="pill"><div class="lbl">Anxiety</div><div class="val w">11 → 13</div><div class="tag w">GAD-7 · above ≤10 good range</div></div>
+  <div class="pill"><div class="lbl">EEG checks outside range</div><div class="val w">4 → 8 <span style="font-size:12px;color:var(--mut)">of 18</span></div><div class="tag w">Needs verification</div></div>
+</div>
+
+<section>
+  <div class="shead"><h2>1 · Self-report questionnaires</h2><span class="note">Green band = the range described as "good" in the scale's guidance. Lower is better on all four.</span></div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="chead"><div class="ctitle">GHQ-12 · General health</div><div class="chip good">−7 improved</div></div>
+      <div class="cnums"><span class="v1">11</span><span class="ar">→</span><span class="v2">4</span><span class="cunit">of 36 · ≤12 good</span></div>
+      <svg viewBox="0 0 300 42" role="img" aria-label="GHQ-12 fell from 11 to 4 on a 0 to 36 scale, good is 12 or below">
+        <rect x="10" y="10" width="280" height="12" rx="6" fill="#1d2532"/>
+        <rect x="10" y="10" width="93.3" height="12" rx="6" fill="rgba(46,230,168,.16)"/>
+        <line x1="103.3" y1="6" x2="103.3" y2="26" stroke="#2ee6a8" stroke-width="1" opacity=".55"/>
+        <line x1="41.1" y1="16" x2="95.6" y2="16" stroke="#4d5b70" stroke-width="2" stroke-dasharray="3 3"/>
+        <circle cx="95.6" cy="16" r="6" fill="#141b25" stroke="#7b8ba6" stroke-width="2"/>
+        <circle cx="41.1" cy="16" r="6.5" fill="#38bdf8"/>
+        <text x="10" y="37" font-size="9.5" fill="#8b98ad">0</text>
+        <text x="103.3" y="37" font-size="9.5" fill="#2ee6a8" text-anchor="middle">12</text>
+        <text x="290" y="37" font-size="9.5" fill="#8b98ad" text-anchor="end">36</text>
+      </svg>
+      <div class="cnote">The largest shift in the whole assessment. Concentration, decision-making, feeling useful, enjoyment and overall happiness all moved from "same as usual" to "better than usual"; feeling "constantly under strain" returned to "no more than usual".</div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><div class="ctitle">GAD-7 · Anxiety</div><div class="chip warn">+2 worse</div></div>
+      <div class="cnums"><span class="v1">11</span><span class="ar">→</span><span class="v2">13</span><span class="cunit">of 21 · ≤10 good, ≤5 better</span></div>
+      <svg viewBox="0 0 300 42" role="img" aria-label="GAD-7 rose from 11 to 13 on a 0 to 21 scale, good is 10 or below">
+        <rect x="10" y="10" width="280" height="12" rx="6" fill="#1d2532"/>
+        <rect x="10" y="10" width="133.3" height="12" rx="6" fill="rgba(46,230,168,.12)"/>
+        <rect x="10" y="10" width="66.7" height="12" rx="6" fill="rgba(46,230,168,.26)"/>
+        <line x1="143.3" y1="6" x2="143.3" y2="26" stroke="#2ee6a8" stroke-width="1" opacity=".55"/>
+        <line x1="156.7" y1="16" x2="183.3" y2="16" stroke="#4d5b70" stroke-width="2" stroke-dasharray="3 3"/>
+        <circle cx="156.7" cy="16" r="6" fill="#141b25" stroke="#7b8ba6" stroke-width="2"/>
+        <circle cx="183.3" cy="16" r="6.5" fill="#38bdf8"/>
+        <text x="10" y="37" font-size="9.5" fill="#8b98ad">0</text>
+        <text x="76.7" y="37" font-size="9.5" fill="#2ee6a8" text-anchor="middle">5</text>
+        <text x="143.3" y="37" font-size="9.5" fill="#2ee6a8" text-anchor="middle">10</text>
+        <text x="290" y="37" font-size="9.5" fill="#8b98ad" text-anchor="end">21</text>
+      </svg>
+      <div class="cnote">Above the ≤10 "good" range at both visits and moving further from it. Driven by <b>"worrying too much about different things"</b> (not at all → more than half the days) and trouble relaxing (+1). Feeling "afraid something awful might happen" eased by one level.</div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><div class="ctitle">PHQ-9 · Depression</div><div class="chip good">−2 improved</div></div>
+      <div class="cnums"><span class="v1">9</span><span class="ar">→</span><span class="v2">7</span><span class="cunit">of 27 · ≤10 good, ≤5 better</span></div>
+      <svg viewBox="0 0 300 42" role="img" aria-label="PHQ-9 fell from 9 to 7 on a 0 to 27 scale, good is 10 or below">
+        <rect x="10" y="10" width="280" height="12" rx="6" fill="#1d2532"/>
+        <rect x="10" y="10" width="103.7" height="12" rx="6" fill="rgba(46,230,168,.12)"/>
+        <rect x="10" y="10" width="51.9" height="12" rx="6" fill="rgba(46,230,168,.26)"/>
+        <line x1="113.7" y1="6" x2="113.7" y2="26" stroke="#2ee6a8" stroke-width="1" opacity=".55"/>
+        <line x1="82.6" y1="16" x2="103.3" y2="16" stroke="#4d5b70" stroke-width="2" stroke-dasharray="3 3"/>
+        <circle cx="103.3" cy="16" r="6" fill="#141b25" stroke="#7b8ba6" stroke-width="2"/>
+        <circle cx="82.6" cy="16" r="6.5" fill="#38bdf8"/>
+        <text x="10" y="37" font-size="9.5" fill="#8b98ad">0</text>
+        <text x="61.9" y="37" font-size="9.5" fill="#2ee6a8" text-anchor="middle">5</text>
+        <text x="113.7" y="37" font-size="9.5" fill="#2ee6a8" text-anchor="middle">10</text>
+        <text x="290" y="37" font-size="9.5" fill="#8b98ad" text-anchor="end">27</text>
+      </svg>
+      <div class="cnote">Low mood, loss of interest, appetite and self-criticism each eased by one level; <b>energy and concentration each worsened by one level</b>. The separate functional-difficulty item improved from "very difficult" to "somewhat difficult".</div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><div class="ctitle">ASRS · Adult ADHD screen</div><div class="chip flat">+1 ≈ unchanged</div></div>
+      <div class="cnums"><span class="v1">10</span><span class="ar">→</span><span class="v2">11</span><span class="cunit">of 24 · ≤14 good</span></div>
+      <svg viewBox="0 0 300 42" role="img" aria-label="ASRS moved from 10 to 11 on a 0 to 24 scale, good is 14 or below">
+        <rect x="10" y="10" width="280" height="12" rx="6" fill="#1d2532"/>
+        <rect x="10" y="10" width="163.3" height="12" rx="6" fill="rgba(46,230,168,.16)"/>
+        <line x1="173.3" y1="6" x2="173.3" y2="26" stroke="#2ee6a8" stroke-width="1" opacity=".55"/>
+        <line x1="126.7" y1="16" x2="138.3" y2="16" stroke="#4d5b70" stroke-width="2" stroke-dasharray="3 3"/>
+        <circle cx="126.7" cy="16" r="6" fill="#141b25" stroke="#7b8ba6" stroke-width="2"/>
+        <circle cx="138.3" cy="16" r="6.5" fill="#38bdf8"/>
+        <text x="10" y="37" font-size="9.5" fill="#8b98ad">0</text>
+        <text x="173.3" y="37" font-size="9.5" fill="#2ee6a8" text-anchor="middle">14</text>
+        <text x="290" y="37" font-size="9.5" fill="#8b98ad" text-anchor="end">24</text>
+      </svg>
+      <div class="cnote">Five of six items answered identically; only "depending on others to keep life in order" rose one level. <b>"Difficulty unwinding or relaxing" stayed at "Often" both times</b> — the same theme the GAD-7 flags.</div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="shead"><h2>2 · Attention task (CPT, 8-min Go/No-Go)</h2><span class="note">Z-scores and descriptors as supplied by the platform. All five metrics moved in the favourable direction.</span></div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="chead"><div class="ctitle">Reaction time</div><div class="chip good">−81 ms · −18%</div></div>
+      <div class="cnums"><span class="v1">443</span><span class="ar">→</span><span class="v2">363</span><span class="cunit">ms · lower = faster</span></div>
+      <svg viewBox="0 0 300 42" role="img" aria-label="Reaction time fell from 443 to 363 milliseconds">
+        <rect x="10" y="10" width="280" height="12" rx="6" fill="#1d2532"/>
+        <line x1="179.3" y1="16" x2="217" y2="16" stroke="#4d5b70" stroke-width="2" stroke-dasharray="3 3"/>
+        <circle cx="217" cy="16" r="6" fill="#141b25" stroke="#7b8ba6" stroke-width="2"/>
+        <circle cx="179.3" cy="16" r="6.5" fill="#38bdf8"/>
+        <text x="10" y="37" font-size="9.5" fill="#8b98ad">0 ms</text>
+        <text x="290" y="37" font-size="9.5" fill="#8b98ad" text-anchor="end">600 ms</text>
+      </svg>
+      <div class="czs">Z-score: <span class="num1">−0.23 (Medium)</span> → <span class="num2">1.32 (Superior)</span></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><div class="ctitle">Reaction-time variability</div><div class="chip good">−19.5 ms · −36%</div></div>
+      <div class="cnums"><span class="v1">54.3</span><span class="ar">→</span><span class="v2">34.8</span><span class="cunit">ms SD · lower = steadier</span></div>
+      <svg viewBox="0 0 300 42" role="img" aria-label="Reaction time variability fell from 54.3 to 34.8 milliseconds">
+        <rect x="10" y="10" width="280" height="12" rx="6" fill="#1d2532"/>
+        <line x1="131.8" y1="16" x2="200" y2="16" stroke="#4d5b70" stroke-width="2" stroke-dasharray="3 3"/>
+        <circle cx="200" cy="16" r="6" fill="#141b25" stroke="#7b8ba6" stroke-width="2"/>
+        <circle cx="131.8" cy="16" r="6.5" fill="#38bdf8"/>
+        <text x="10" y="37" font-size="9.5" fill="#8b98ad">0 ms</text>
+        <text x="290" y="37" font-size="9.5" fill="#8b98ad" text-anchor="end">80 ms</text>
+      </svg>
+      <div class="czs">Z-score: <span class="num1">0.90 (Very High)</span> → <span class="num2">1.54 (Very Superior)</span></div>
+      <div class="cnote">The strongest performance finding: attention was held far more consistently across the 8 minutes.</div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><div class="ctitle">Accuracy</div><div class="chip flat">at ceiling</div></div>
+      <div class="cnums"><span class="v1">99.5</span><span class="ar">→</span><span class="v2">99.75</span><span class="cunit">% correct</span></div>
+      <svg viewBox="0 0 300 42" role="img" aria-label="Accuracy 99.5 percent to 99.75 percent, both near ceiling">
+        <rect x="10" y="10" width="280" height="12" rx="6" fill="#1d2532"/>
+        <circle cx="276" cy="16" r="6" fill="#141b25" stroke="#7b8ba6" stroke-width="2"/>
+        <circle cx="283" cy="16" r="6.5" fill="#38bdf8"/>
+        <text x="10" y="37" font-size="9.5" fill="#8b98ad">90%</text>
+        <text x="290" y="37" font-size="9.5" fill="#8b98ad" text-anchor="end">100%</text>
+      </svg>
+      <div class="czs">Z-score: <span class="num1">0.71 (Very High)</span> → <span class="num2">0.79 (Superior)</span></div>
+      <div class="cnote">Already near ceiling, so the speed gain came <b>without</b> any accuracy trade-off.</div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><div class="ctitle">Errors</div><div class="chip good">1 fewer</div></div>
+      <div class="cnums"><span class="v1">2</span><span class="ar">→</span><span class="v2">1</span><span class="cunit">commissions (impulsivity)</span></div>
+      <svg viewBox="0 0 300 42" role="img" aria-label="Commission errors fell from 2 to 1; omission errors were 0 at both sessions">
+        <rect x="10" y="10" width="280" height="12" rx="6" fill="#1d2532"/>
+        <line x1="38" y1="16" x2="66" y2="16" stroke="#4d5b70" stroke-width="2" stroke-dasharray="3 3"/>
+        <circle cx="66" cy="16" r="6" fill="#141b25" stroke="#7b8ba6" stroke-width="2"/>
+        <circle cx="38" cy="16" r="6.5" fill="#38bdf8"/>
+        <text x="10" y="37" font-size="9.5" fill="#8b98ad">0</text>
+        <text x="290" y="37" font-size="9.5" fill="#8b98ad" text-anchor="end">10 errors</text>
+      </svg>
+      <div class="czs">Commissions z: <span class="num1">0.58</span> → <span class="num2">0.69</span> · Omissions <b>0 → 0</b> (z 0.41, Very Superior, both)</div>
+    </div>
+
+  </div>
+  <div class="cav" style="background:rgba(139,152,173,.07);border-color:var(--line);color:#b6c2d2">Observed vs. explanation: this is a genuine, consistent improvement in measured performance. A second exposure to the same 8-minute task can also contribute to faster times, so part of the gain may reflect task familiarity rather than change in attention alone.</div>
+</section>
+
+<section>
+  <div class="shead"><h2>3 · EEG checks</h2><span class="note">18 checks. Outside their typical range: <b class="w">4 at session 1 → 8 at session 2</b>.</span></div>
+
+  <div class="wide">
+    <h4>Theta/Beta ratios — the clearest EEG change (all rose; lower is better)</h4>
+    <svg viewBox="0 0 400 230" style="max-width:640px;margin:0 auto" role="img" aria-label="Theta beta ratios all increased between sessions and all sit above the 2.2 upper limit">
+      <g font-size="9" fill="#5f6c80">
+        <line x1="132" y1="40" x2="132" y2="196" stroke="#232d3c"/>
+        <line x1="172" y1="40" x2="172" y2="196" stroke="#1b2431"/>
+        <line x1="212" y1="40" x2="212" y2="196" stroke="#1b2431"/>
+        <line x1="252" y1="40" x2="252" y2="196" stroke="#1b2431"/>
+        <line x1="292" y1="40" x2="292" y2="196" stroke="#1b2431"/>
+        <line x1="332" y1="40" x2="332" y2="196" stroke="#1b2431"/>
+        <line x1="372" y1="40" x2="372" y2="196" stroke="#1b2431"/>
+        <text x="132" y="212" text-anchor="middle">0</text><text x="172" y="212" text-anchor="middle">1</text>
+        <text x="212" y="212" text-anchor="middle">2</text><text x="252" y="212" text-anchor="middle">3</text>
+        <text x="292" y="212" text-anchor="middle">4</text><text x="332" y="212" text-anchor="middle">5</text>
+        <text x="372" y="212" text-anchor="middle">6</text>
+      </g>
+      <line x1="220" y1="34" x2="220" y2="196" stroke="#2ee6a8" stroke-width="1" opacity=".6" stroke-dasharray="4 3"/>
+      <text x="222" y="30" font-size="9" fill="#2ee6a8">2.2 = upper limit of typical</text>
+
+      <g font-size="11" fill="#e6edf5">
+        <text x="0" y="57">Theta/Beta</text><text x="0" y="69" font-size="9.5" fill="#8b98ad">Central · eyes open</text>
+        <text x="0" y="99">Theta/Beta</text><text x="0" y="111" font-size="9.5" fill="#8b98ad">Frontal L · eyes closed</text>
+        <text x="0" y="141">Theta/Beta</text><text x="0" y="153" font-size="9.5" fill="#8b98ad">Frontal R · eyes closed</text>
+        <text x="0" y="183">Theta/Beta</text><text x="0" y="195" font-size="9.5" fill="#8b98ad">Central · counting task</text>
+      </g>
+
+      <rect x="132" y="55" width="260" height="10" rx="5" fill="#1d2532"/>
+      <rect x="132" y="55" width="88" height="10" rx="5" fill="rgba(46,230,168,.16)"/>
+      <line x1="248" y1="60" x2="298" y2="60" stroke="#4d5b70" stroke-width="2" stroke-dasharray="3 3"/>
+      <circle cx="248" cy="60" r="5.5" fill="#141b25" stroke="#7b8ba6" stroke-width="2"/>
+      <circle cx="298" cy="60" r="6" fill="#38bdf8"/>
+      <text x="248" y="50" font-size="9.5" fill="#7b8ba6" text-anchor="middle">2.9</text>
+      <text x="298" y="50" font-size="10.5" fill="#38bdf8" font-weight="700" text-anchor="middle">4.15</text>
+
+      <rect x="132" y="97" width="260" height="10" rx="5" fill="#1d2532"/>
+      <rect x="132" y="97" width="88" height="10" rx="5" fill="rgba(46,230,168,.16)"/>
+      <line x1="254" y1="102" x2="314.8" y2="102" stroke="#4d5b70" stroke-width="2" stroke-dasharray="3 3"/>
+      <circle cx="254" cy="102" r="5.5" fill="#141b25" stroke="#7b8ba6" stroke-width="2"/>
+      <circle cx="314.8" cy="102" r="6" fill="#38bdf8"/>
+      <text x="254" y="92" font-size="9.5" fill="#7b8ba6" text-anchor="middle">3.05</text>
+      <text x="314.8" y="92" font-size="10.5" fill="#38bdf8" font-weight="700" text-anchor="middle">4.57</text>
+
+      <rect x="132" y="139" width="260" height="10" rx="5" fill="#1d2532"/>
+      <rect x="132" y="139" width="88" height="10" rx="5" fill="rgba(46,230,168,.16)"/>
+      <line x1="225.2" y1="144" x2="378.4" y2="144" stroke="#4d5b70" stroke-width="2" stroke-dasharray="3 3"/>
+      <circle cx="225.2" cy="144" r="5.5" fill="#141b25" stroke="#7b8ba6" stroke-width="2"/>
+      <circle cx="378.4" cy="144" r="6" fill="#38bdf8" stroke="#ffb020" stroke-width="2"/>
+      <text x="225.2" y="134" font-size="9.5" fill="#7b8ba6" text-anchor="middle">2.33</text>
+      <text x="378.4" y="134" font-size="10.5" fill="#ffb020" font-weight="700" text-anchor="middle">6.16</text>
+
+      <rect x="132" y="181" width="260" height="10" rx="5" fill="#1d2532"/>
+      <rect x="132" y="181" width="120" height="10" rx="5" fill="rgba(46,230,168,.10)"/>
+      <rect x="132" y="181" width="88" height="10" rx="5" fill="rgba(46,230,168,.16)"/>
+      <line x1="234" y1="186" x2="330.4" y2="186" stroke="#4d5b70" stroke-width="2" stroke-dasharray="3 3"/>
+      <circle cx="234" cy="186" r="5.5" fill="#141b25" stroke="#7b8ba6" stroke-width="2"/>
+      <circle cx="330.4" cy="186" r="6" fill="#38bdf8"/>
+      <text x="234" y="176" font-size="9.5" fill="#7b8ba6" text-anchor="middle">2.55</text>
+      <text x="330.4" y="176" font-size="10.5" fill="#38bdf8" font-weight="700" text-anchor="middle">4.96</text>
+      <text x="252" y="176" font-size="8.5" fill="#2ee6a8" text-anchor="start" opacity=".8">◀ 3.0 for this check</text>
+    </svg>
+    <div class="cnote" style="margin-top:8px">Theta/Beta ratio is described in the reference material as relating to focus (central, eyes open) and to impulse control / emotional volatility (frontal). All four values were higher at session 2, and the counting-task ratio crossed from the "good" band (≤3) to above it. <b class="w">The frontal-right value of 6.16 sits above the top of this metric's documented 0–5 range</b> — that alone is a reason to check signal quality at that site before reading anything into it.</div>
+  </div>
+
+  <div class="wide" style="margin-top:12px">
+    <h4>All other checks</h4>
+    <table>
+      <colgroup><col style="width:40%"><col style="width:20%"><col style="width:15%"><col style="width:15%"><col style="width:10%"></colgroup>
+      <thead><tr><th>Check</th><th>Typical</th><th>Sep 5</th><th>May 5</th><th></th></tr></thead>
+      <tbody>
+        <tr><td>Alpha response <span class="cond">central, eye closing</span></td><td>&gt; 30%</td><td class="num1">54%</td><td class="num2">55%</td><td><span class="dot" style="background:#2ee6a8"></span></td></tr>
+        <tr><td>Alpha recovery <span class="cond">central</span></td><td>≤ 25%</td><td class="num1">−21%</td><td class="num2">−4%</td><td><span class="dot" style="background:#2ee6a8"></span></td></tr>
+        <tr><td>Beta balance <span class="cond">frontal, eyes closed</span></td><td>0.40–0.75</td><td class="num1">0.59</td><td class="num2">0.42</td><td><span class="dot" style="background:#2ee6a8"></span></td></tr>
+        <tr><td>Alpha symmetry <span class="cond">frontal</span></td><td>0.85–1.15</td><td class="num1">0.96</td><td class="num2">0.96</td><td><span class="dot" style="background:#2ee6a8"></span></td></tr>
+        <tr><td>Beta symmetry <span class="cond">frontal</span></td><td>0.85–1.25</td><td class="num1">0.94</td><td class="num2">1.24</td><td><span class="dot" style="background:#2ee6a8"></span></td></tr>
+        <tr><td>Theta symmetry <span class="cond">frontal</span></td><td>0.85–1.25</td><td class="num1">1.23</td><td class="num2">0.92</td><td><span class="dot" style="background:#2ee6a8"></span></td></tr>
+        <tr class="flag"><td>Theta/Beta symmetry <span class="cond">frontal — newly outside</span></td><td>&gt; 0.8</td><td class="num1">1.31</td><td class="num2">0.74</td><td><span class="dot" style="background:#ffb020"></span></td></tr>
+        <tr><td>Theta/Alpha <span class="cond">frontal left</span></td><td>&gt; 0.4</td><td class="num1">1.09</td><td class="num2">1.25</td><td><span class="dot" style="background:#2ee6a8"></span></td></tr>
+        <tr><td>Theta/Alpha <span class="cond">frontal right</span></td><td>&gt; 0.4</td><td class="num1">0.85</td><td class="num2">1.31</td><td><span class="dot" style="background:#2ee6a8"></span></td></tr>
+        <tr class="flag"><td>Beta response while counting <span class="cond">central — newly outside, just</span></td><td>&gt; −15%</td><td class="num1">1%</td><td class="num2">−16%</td><td><span class="dot" style="background:#ffb020"></span></td></tr>
+        <tr><td>Theta/Beta response while counting <span class="cond">central</span></td><td>≤ 15%</td><td class="num1">5%</td><td class="num2">5%</td><td><span class="dot" style="background:#2ee6a8"></span></td></tr>
+        <tr class="flag"><td>Peak alpha frequency <span class="cond">central — below range at both</span></td><td>&gt; 9.5 Hz</td><td class="num1">9 Hz</td><td class="num2">8 Hz</td><td><span class="dot" style="background:#ffb020"></span></td></tr>
+        <tr><td>Theta/Low-Beta <span class="cond">central — rising, still in range</span></td><td>≤ 3.0</td><td class="num1">1.88</td><td class="num2">2.88</td><td><span class="dot" style="background:#2ee6a8"></span></td></tr>
+        <tr class="flag"><td>Low-alpha / High-alpha <span class="cond">frontal — newly outside</span></td><td>≤ 2.3</td><td class="num1">2.01</td><td class="num2">3.24</td><td><span class="dot" style="background:#ffb020"></span></td></tr>
+      </tbody>
+    </table>
+    <div class="cnote" style="margin-top:8px"><b class="g">Holding steady:</b> the stress-sensitive alpha response and alpha recovery, and all three left/right symmetry ratios, remain within their typical ranges. <b class="w">Moving out of range:</b> checks that the reference material links to alertness, tiredness, sleep and age — slower peak alpha, more slow alpha relative to fast alpha, and a beta response to the counting task that dipped just below the typical floor.</div>
+  </div>
+</section>
+
+<section>
+  <div class="shead"><h2>4 · Brainmaps (z-scores vs. healthy same-age, same-gender norms)</h2><span class="note">0 = typical for peers · |z| &gt; 2 = outside ~95% of that reference group. Bars show the spread from the lowest to the highest of the <b>six sites recorded at both sessions</b> (Cz, F3, F4, Fp1, Fz, Tp10).</span></div>
+  <div class="two">
+
+    <div class="wide">
+      <h4>Eyes open</h4>
+      <svg viewBox="0 0 400 232" role="img" aria-label="Eyes open: theta and low alpha shifted much higher, beta and high alpha shifted lower">
+        <g font-size="9" fill="#5f6c80">
+          <line x1="115.5" y1="32" x2="115.5" y2="208" stroke="#1b2431"/>
+          <line x1="194.5" y1="32" x2="194.5" y2="208" stroke="#39465a"/>
+          <line x1="273.5" y1="32" x2="273.5" y2="208" stroke="#1b2431"/>
+          <line x1="352.5" y1="32" x2="352.5" y2="208" stroke="#1b2431"/>
+          <text x="115.5" y="224" text-anchor="middle">−2</text>
+          <text x="194.5" y="224" text-anchor="middle">0</text>
+          <text x="273.5" y="224" text-anchor="middle">+2</text>
+          <text x="352.5" y="224" text-anchor="middle">+4</text>
+        </g>
+        <g font-size="10" fill="#c8d3e0">
+          <text x="0" y="48">Theta</text><text x="0" y="78">Alpha</text><text x="0" y="108">Low alpha</text>
+          <text x="0" y="138">High alpha</text><text x="0" y="168">Beta</text><text x="0" y="198">High beta</text>
+        </g>
+        <rect x="197.1" y="35" width="67.5" height="8" rx="4" fill="#7b8ba6" opacity=".55"/>
+        <rect x="288.3" y="45" width="98.3" height="8" rx="4" fill="#38bdf8" opacity=".85"/>
+        <rect x="182.1" y="65" width="89.2" height="8" rx="4" fill="#7b8ba6" opacity=".55"/>
+        <rect x="227.5" y="75" width="69.0" height="8" rx="4" fill="#38bdf8" opacity=".85"/>
+        <rect x="190.9" y="95" width="63.2" height="8" rx="4" fill="#7b8ba6" opacity=".55"/>
+        <rect x="242.4" y="105" width="114.8" height="8" rx="4" fill="#38bdf8" opacity=".85"/>
+        <rect x="177.2" y="125" width="69.1" height="8" rx="4" fill="#7b8ba6" opacity=".55"/>
+        <rect x="120.1" y="135" width="65.8" height="8" rx="4" fill="#38bdf8" opacity=".85"/>
+        <rect x="153.5" y="155" width="32.9" height="8" rx="4" fill="#7b8ba6" opacity=".55"/>
+        <rect x="102.7" y="165" width="38.1" height="8" rx="4" fill="#38bdf8" opacity=".85"/>
+        <rect x="147.8" y="185" width="29.5" height="8" rx="4" fill="#7b8ba6" opacity=".55"/>
+        <rect x="125.3" y="195" width="21.7" height="8" rx="4" fill="#38bdf8" opacity=".85"/>
+      </svg>
+    </div>
+
+    <div class="wide">
+      <h4>Eyes closed</h4>
+      <svg viewBox="0 0 400 232" role="img" aria-label="Eyes closed: theta and low alpha shifted higher, beta and high alpha shifted lower">
+        <g font-size="9" fill="#5f6c80">
+          <line x1="115.5" y1="32" x2="115.5" y2="208" stroke="#1b2431"/>
+          <line x1="194.5" y1="32" x2="194.5" y2="208" stroke="#39465a"/>
+          <line x1="273.5" y1="32" x2="273.5" y2="208" stroke="#1b2431"/>
+          <line x1="352.5" y1="32" x2="352.5" y2="208" stroke="#1b2431"/>
+          <text x="115.5" y="224" text-anchor="middle">−2</text>
+          <text x="194.5" y="224" text-anchor="middle">0</text>
+          <text x="273.5" y="224" text-anchor="middle">+2</text>
+          <text x="352.5" y="224" text-anchor="middle">+4</text>
+        </g>
+        <g font-size="10" fill="#c8d3e0">
+          <text x="0" y="48">Theta</text><text x="0" y="78">Alpha</text><text x="0" y="108">Low alpha</text>
+          <text x="0" y="138">High alpha</text><text x="0" y="168">Beta</text><text x="0" y="198">High beta</text>
+        </g>
+        <rect x="202.7" y="35" width="50.8" height="8" rx="4" fill="#7b8ba6" opacity=".55"/>
+        <rect x="237.6" y="45" width="91.2" height="8" rx="4" fill="#38bdf8" opacity=".85"/>
+        <rect x="212.6" y="65" width="34.9" height="8" rx="4" fill="#7b8ba6" opacity=".55"/>
+        <rect x="203.2" y="75" width="68.6" height="8" rx="4" fill="#38bdf8" opacity=".85"/>
+        <rect x="240.8" y="95" width="17.7" height="8" rx="4" fill="#7b8ba6" opacity=".55"/>
+        <rect x="252.9" y="105" width="72.3" height="8" rx="4" fill="#38bdf8" opacity=".85"/>
+        <rect x="159.2" y="125" width="39.6" height="8" rx="4" fill="#7b8ba6" opacity=".55"/>
+        <rect x="140.9" y="135" width="25.8" height="8" rx="4" fill="#38bdf8" opacity=".85"/>
+        <rect x="145.5" y="155" width="31.8" height="8" rx="4" fill="#7b8ba6" opacity=".55"/>
+        <rect x="110.6" y="165" width="22.3" height="8" rx="4" fill="#38bdf8" opacity=".85"/>
+        <rect x="148.2" y="185" width="8.7" height="8" rx="4" fill="#7b8ba6" opacity=".55"/>
+        <rect x="119.4" y="195" width="14.0" height="8" rx="4" fill="#38bdf8" opacity=".85"/>
+      </svg>
+    </div>
+
+  </div>
+  <div class="cnote" style="margin-top:10px">Both conditions show the same coherent shift: <b>slow activity up</b> (theta and low alpha now largely above z = +2) and <b>fast activity down</b> (beta and high beta now largely below z = −2), with <b>high alpha falling as low alpha rises</b> — consistent with the peak alpha frequency dropping from 9 Hz to 8 Hz. Per the reference material, high eyes-open theta is associated with inattention, brain fog or fatigue, and low beta with calmness, fatigue or reduced attention.</div>
+  <div class="cav">
+    <b>Read the EEG change cautiously — three reasons.</b>
+    <b>1) Different coverage:</b> session 2 added Fp2 and Tp9, which were not recorded in session 1, so they have no baseline; they are excluded from the bars above. Tp9 eyes-open low alpha reached z = 7.8 and Fp2 z = 4.5 — extreme values worth confirming rather than interpreting.
+    <b>2) Out-of-range output:</b> one Theta/Beta value (6.16) exceeds the top of its own documented 0–5 scale.
+    <b>3) State, not necessarily trait:</b> slower peak alpha, more low alpha, less beta and a reduced beta response during the counting task form the kind of pattern that lowered alertness or drowsiness during a recording can produce. The reference material also notes several of these checks are sensitive to sleep disturbance and tiredness. This is a plausible explanation to rule out — not an established finding — and it is supported by the fact that measured attention on the same battery got <i>better</i>, not worse.
+  </div>
+</section>
+
+<section>
+  <div class="shead"><h2>5 · Overall verdict</h2></div>
+  <div class="wide" style="border-left:3px solid var(--good)">
+    <p style="font-size:14px"><b>Net positive on how this patient functions and performs, with two open questions.</b> Over 242 days, general wellbeing improved markedly (GHQ-12 11 → 4, now well inside the good range), depressive symptoms eased modestly with a full-level improvement in reported functional difficulty, and the attention task was 18% faster and 36% more consistent with no accuracy cost. ADHD-screen symptoms were essentially unchanged.</p>
+    <p style="font-size:14px">Working against that: <b class="w">anxiety rose slightly and sits above the ≤10 "good" cut-off at both visits</b>, driven by worry and difficulty relaxing — the same "can't unwind" theme that the ASRS and PHQ-9 fatigue item also touch. And <b class="w">the second EEG differs from the first far more than any other measure</b>, in a single direction (slower, less fast activity), with twice as many checks outside their typical ranges. Because that EEG picture contradicts the improved task performance, carries a value beyond its own documented scale, and comes from a session with different electrode coverage, it should be treated as unverified rather than as evidence of change.</p>
+  </div>
+
+  <div class="wide" style="margin-top:12px;border-left:3px solid var(--a2)">
+    <h4>Suggested next steps — clarification and discussion, before any conclusions</h4>
+    <ol>
+      <li><b>Repeat the EEG under standardised conditions</b> and confirm signal quality — especially Tp9, Fp2 and the frontal-right site. Record time of day, previous night's sleep, caffeine and alertness during the recording so the two sessions can be compared like for like.</li>
+      <li><b>Fix the montage for future comparisons.</b> Session 2 included two sites session 1 did not; agreeing a consistent set of electrodes will make the next comparison interpretable.</li>
+      <li><b>Discuss the anxiety trend with the patient.</b> Which worries have grown, and does GAD-7 = 13 reflect the last two weeks specifically or a steady pattern? A repeat GAD-7 outside a stressful window would help distinguish the two.</li>
+      <li><b>Explore the "difficulty unwinding" thread</b> that shows up independently on the ASRS (Often, both sessions), GAD-7 (trouble relaxing, worsened) and PHQ-9 (energy, worsened) — it is the most consistent unresolved complaint across instruments.</li>
+      <li><b>Ask about sleep and daytime tiredness.</b> The reference material links several of the checks that moved (alpha recovery, low-alpha/high-alpha ratio, beta response while counting) to sleep disturbance and tiredness; this history is needed to interpret the EEG shift either way.</li>
+      <li><b>Treat each session as a snapshot.</b> One EEG and one CPT per time point; part of the CPT gain may reflect familiarity with the task. A third data point would clarify which trends are real.</li>
+    </ol>
+  </div>
+</section>
+
+<div class="foot">All questionnaire, EEG check and CPT values, z-scores and descriptors are reported exactly as recorded in the two assessments. Score ranges, "good" cut-offs and normal ranges are taken from the supplied reference material. Only differences, percentage changes, and the per-band lowest/highest site values shown in the brainmap bars were calculated from those recorded values; no other values are derived. This comparison describes measured change only — it is not a diagnosis and makes no claim about the cause of any change.</div>
+</div></div>
+</section><section class="col">
+  <header class="colHead">
+    <div class="colTitle">
+      <span class="badge">v6</span>
+      <span class="engine">Messages</span>
+    </div>
+    <div class="meta"><div class="metaRow"><span class="metaKey">When</span><span class="metaValue">08 Sep 2026 18:45</span></div><div class="metaRow"><span class="metaKey">Engine</span><span class="metaValue">Messages</span></div><div class="metaRow"><span class="metaKey">Model</span><span class="metaValue">claude-opus-5</span></div><div class="metaRow"><span class="metaKey">Run time</span><span class="metaValue">425.6 s</span></div><div class="metaRow"><span class="metaKey">Turns</span><span class="metaValue">1</span></div><div class="metaRow"><span class="metaKey">Tool calls</span><span class="metaValue">0</span></div><div class="metaRow"><span class="metaKey">Tokens</span><span class="metaValue">12,929 in (4,767 cached, 8,162 new) · 40,345 out</span></div><div class="metaRow"><span class="metaKey">Cost</span><span class="metaValue">$1.05 (estimated)</span></div><div class="metaRow"><span class="metaKey">Effort</span><span class="metaValue">high</span></div><div class="metaRow"><span class="metaKey">Thinking</span><span class="metaValue">Enabled</span></div><div class="metaRow"><span class="metaKey">Tools available</span><span class="metaValue">none</span></div><div class="metaRow"><span class="metaKey">Tools used</span><span class="metaValue">none</span></div><div class="metaRow"><span class="metaKey">Analysis source</span><span class="metaValue">not provided</span></div></div>
+  </header>
+  
+  <div class="report"><div style="background:#0b0f16;color:#e6edf5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.5;padding:18px 14px;margin:0;font-size:15px;">
+
+<style>
+.mlx-wrap *{box-sizing:border-box;}
+.mlx-card{background:#131a24;border:1px solid #1f2a38;border-radius:14px;padding:16px;margin-bottom:14px;}
+.mlx-h{font-size:13px;letter-spacing:.09em;text-transform:uppercase;color:#8fa0b5;margin:0 0 4px;font-weight:700;}
+.mlx-sub{font-size:12.5px;color:#8fa0b5;margin:0 0 14px;}
+.mlx-grid2{display:flex;flex-wrap:wrap;gap:14px;}
+.mlx-col{flex:1 1 300px;min-width:275px;}
+.mlx-chip{display:inline-block;font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:20px;letter-spacing:.02em;}
+.mlx-good{background:#0f3a2b;color:#4ade80;}
+.mlx-warn{background:#42300a;color:#fbbf24;}
+.mlx-bad{background:#4a1f1f;color:#f87171;}
+.mlx-neu{background:#22303f;color:#9fb0c4;}
+.mlx-tile{background:#0f1620;border:1px solid #1f2a38;border-radius:11px;padding:12px;}
+.mlx-name{font-size:13.5px;font-weight:700;color:#dce6f2;margin:0 0 2px;}
+.mlx-desc{font-size:11.5px;color:#7f8fa4;margin:0 0 8px;}
+.mlx-val{font-size:13px;color:#c8d5e4;}
+.mlx-li{margin:0 0 9px;padding-left:2px;}
+</style>
+
+<div class="mlx-wrap" style="max-width:960px;margin:0 auto;">
+
+  <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between;margin-bottom:12px;">
+    <div>
+      <div style="font-size:21px;font-weight:800;letter-spacing:-.2px;">Assessment comparison</div>
+      <div style="font-size:12.5px;color:#8fa0b5;">33-year-old male &nbsp;·&nbsp; Assessment 1: 5 Sep 2025 &nbsp;→&nbsp; Assessment 2: 5 May 2026 &nbsp;·&nbsp; 242 days apart</div>
+    </div>
+    <div style="font-size:11.5px;color:#64748b;">Questionnaires · CPT · EEG checks · EEG brainmaps</div>
+  </div>
+
+  <!-- TAKEAWAY -->
+  <div class="mlx-card" style="border-color:#2b3a4e;background:linear-gradient(180deg,#16202c 0%,#131a24 100%);">
+    <div class="mlx-h" style="color:#60a5fa;">Main takeaway</div>
+    <div style="font-size:18px;font-weight:700;line-height:1.35;margin-bottom:12px;">
+      Everyday wellbeing and attention-task performance both improved. Anxiety scores moved slightly the wrong way. The EEG recording shifted broadly toward slower activity — a direction that does <em>not</em> match the improved test performance and needs verifying before it is interpreted.
+    </div>
+    <div class="mlx-grid2">
+      <div class="mlx-col" style="min-width:200px;">
+        <div class="mlx-tile"><span class="mlx-chip mlx-good">Improved</span>
+          <div style="margin-top:8px;font-size:13px;color:#c8d5e4;">General health <b>GHQ-12 11 → 4</b>, depression <b>PHQ-9 9 → 7</b>, self-rated coping difficulty "very difficult" → "somewhat difficult". Reaction time <b>−81 ms</b>, consistency <b>−36% SD</b>.</div>
+        </div>
+      </div>
+      <div class="mlx-col" style="min-width:200px;">
+        <div class="mlx-tile"><span class="mlx-chip mlx-warn">Worth attention</span>
+          <div style="margin-top:8px;font-size:13px;color:#c8d5e4;">Anxiety <b>GAD-7 11 → 13</b> — above the ≤10 "good" band at both time points. ADHD screen <b>ASRS 10 → 11</b>, essentially unchanged and within the good band.</div>
+        </div>
+      </div>
+      <div class="mlx-col" style="min-width:200px;">
+        <div class="mlx-tile"><span class="mlx-chip mlx-bad">Needs verification</span>
+          <div style="margin-top:8px;font-size:13px;color:#c8d5e4;">Theta and low-alpha up, all beta bands down at nearly every site; <b>6 EEG checks</b> moved out of, or further outside, their normal ranges.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUESTIONNAIRES -->
+  <div class="mlx-card">
+    <div class="mlx-h">1 · Self-report questionnaires</div>
+    <div class="mlx-sub">Hollow circle = Sep 2025, filled circle = May 2026. Green shading = the reference "good" range for that scale (darker green = "better" range where defined). Lower is better on all four.</div>
+
+    <div class="mlx-grid2">
+      <div class="mlx-col">
+        <div class="mlx-tile" style="margin-bottom:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div class="mlx-name">GHQ-12 · General health <span style="font-weight:400;color:#7f8fa4;">(0–36)</span></div>
+            <span class="mlx-chip mlx-good">▼ 7 pts</span>
+          </div>
+          <div class="mlx-desc">Reference: ≤ 12 good</div>
+          <svg viewBox="0 0 420 62" width="100%" role="img" aria-label="GHQ-12 fell from 11 to 4, both within the good range">
+            <rect x="10" y="26" width="400" height="12" rx="6" fill="#22303f"/>
+            <rect x="10" y="26" width="133" height="12" rx="6" fill="#12472f"/>
+            <line x1="143" y1="20" x2="143" y2="44" stroke="#2f7f5b" stroke-width="1" stroke-dasharray="3 3"/>
+            <line x1="132" y1="32" x2="55" y2="32" stroke="#4ade80" stroke-width="2.5"/>
+            <circle cx="132" cy="32" r="5.5" fill="#0f1620" stroke="#93a4b8" stroke-width="2"/>
+            <circle cx="54" cy="32" r="7" fill="#4ade80"/>
+            <text x="54" y="17" text-anchor="middle" font-size="13" font-weight="700" fill="#4ade80">4</text>
+            <text x="132" y="53" text-anchor="middle" font-size="11.5" fill="#93a4b8">11</text>
+            <text x="10" y="53" font-size="10" fill="#64748b">0</text>
+            <text x="410" y="53" font-size="10" fill="#64748b" text-anchor="end">36</text>
+            <text x="150" y="19" font-size="9.5" fill="#2f9f72">good ≤12</text>
+          </svg>
+          <div style="font-size:12.5px;color:#a7b6c8;">Largest single change in this comparison. Concentration, decision-making, feeling useful, enjoyment and general happiness all moved from "same as usual" to "better than usual"; "constantly under strain" eased from "rather more" to "no more than usual".</div>
+        </div>
+
+        <div class="mlx-tile">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div class="mlx-name">PHQ-9 · Depression <span style="font-weight:400;color:#7f8fa4;">(0–27)</span></div>
+            <span class="mlx-chip mlx-good">▼ 2 pts</span>
+          </div>
+          <div class="mlx-desc">Reference: ≤ 10 good, ≤ 5 better</div>
+          <svg viewBox="0 0 420 62" width="100%" role="img" aria-label="PHQ-9 fell from 9 to 7, within the good range">
+            <rect x="10" y="26" width="400" height="12" rx="6" fill="#22303f"/>
+            <rect x="10" y="26" width="148" height="12" rx="6" fill="#12472f"/>
+            <rect x="10" y="26" width="74" height="12" rx="6" fill="#186b4b"/>
+            <line x1="158" y1="20" x2="158" y2="44" stroke="#2f7f5b" stroke-width="1" stroke-dasharray="3 3"/>
+            <line x1="143" y1="32" x2="114" y2="32" stroke="#4ade80" stroke-width="2.5"/>
+            <circle cx="143" cy="32" r="5.5" fill="#0f1620" stroke="#93a4b8" stroke-width="2"/>
+            <circle cx="114" cy="32" r="7" fill="#4ade80"/>
+            <text x="114" y="17" text-anchor="middle" font-size="13" font-weight="700" fill="#4ade80">7</text>
+            <text x="150" y="53" text-anchor="middle" font-size="11.5" fill="#93a4b8">9</text>
+            <text x="10" y="53" font-size="10" fill="#64748b">0</text>
+            <text x="410" y="53" font-size="10" fill="#64748b" text-anchor="end">27</text>
+            <text x="165" y="19" font-size="9.5" fill="#2f9f72">good ≤10</text>
+          </svg>
+          <div style="font-size:12.5px;color:#a7b6c8;">Loss of interest, low mood and self-criticism each eased by one step, and the impact item improved from "very difficult" to "somewhat difficult". Two items moved up: <b>energy/fatigue</b> and <b>concentration</b>.</div>
+        </div>
+      </div>
+
+      <div class="mlx-col">
+        <div class="mlx-tile" style="margin-bottom:12px;border-color:#4a3a12;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div class="mlx-name">GAD-7 · Anxiety <span style="font-weight:400;color:#7f8fa4;">(0–21)</span></div>
+            <span class="mlx-chip mlx-warn">▲ 2 pts</span>
+          </div>
+          <div class="mlx-desc">Reference: ≤ 10 good, ≤ 5 better</div>
+          <svg viewBox="0 0 420 62" width="100%" role="img" aria-label="GAD-7 rose from 11 to 13, above the good range at both time points">
+            <rect x="10" y="26" width="400" height="12" rx="6" fill="#22303f"/>
+            <rect x="10" y="26" width="190" height="12" rx="6" fill="#12472f"/>
+            <rect x="10" y="26" width="95" height="12" rx="6" fill="#186b4b"/>
+            <line x1="200" y1="20" x2="200" y2="44" stroke="#2f7f5b" stroke-width="1" stroke-dasharray="3 3"/>
+            <line x1="220" y1="32" x2="257" y2="32" stroke="#fbbf24" stroke-width="2.5"/>
+            <circle cx="220" cy="32" r="5.5" fill="#0f1620" stroke="#93a4b8" stroke-width="2"/>
+            <circle cx="258" cy="32" r="7" fill="#fbbf24"/>
+            <text x="258" y="17" text-anchor="middle" font-size="13" font-weight="700" fill="#fbbf24">13</text>
+            <text x="214" y="53" text-anchor="middle" font-size="11.5" fill="#93a4b8">11</text>
+            <text x="10" y="53" font-size="10" fill="#64748b">0</text>
+            <text x="410" y="53" font-size="10" fill="#64748b" text-anchor="end">21</text>
+            <text x="130" y="19" font-size="9.5" fill="#2f9f72">good ≤10</text>
+          </svg>
+          <div style="font-size:12.5px;color:#a7b6c8;">The only measure moving away from its reference band. Driven by <b>"worrying too much about different things"</b> (not at all → more than half the days) and <b>trouble relaxing</b> (several days → more than half the days); "feeling afraid something awful might happen" improved. Nervousness and irritability remain at "nearly every day" in both sessions.</div>
+        </div>
+
+        <div class="mlx-tile">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div class="mlx-name">ASRS · Adult ADHD screen <span style="font-weight:400;color:#7f8fa4;">(0–24)</span></div>
+            <span class="mlx-chip mlx-neu">▲ 1 pt · stable</span>
+          </div>
+          <div class="mlx-desc">Reference: ≤ 14 good</div>
+          <svg viewBox="0 0 420 62" width="100%" role="img" aria-label="ASRS moved from 10 to 11, within the good range">
+            <rect x="10" y="26" width="400" height="12" rx="6" fill="#22303f"/>
+            <rect x="10" y="26" width="233" height="12" rx="6" fill="#12472f"/>
+            <line x1="243" y1="20" x2="243" y2="44" stroke="#2f7f5b" stroke-width="1" stroke-dasharray="3 3"/>
+            <line x1="177" y1="32" x2="193" y2="32" stroke="#93a4b8" stroke-width="2.5"/>
+            <circle cx="177" cy="32" r="5.5" fill="#0f1620" stroke="#93a4b8" stroke-width="2"/>
+            <circle cx="193" cy="32" r="7" fill="#93a4b8"/>
+            <text x="196" y="17" text-anchor="middle" font-size="13" font-weight="700" fill="#c8d5e4">11</text>
+            <text x="172" y="53" text-anchor="middle" font-size="11.5" fill="#93a4b8">10</text>
+            <text x="10" y="53" font-size="10" fill="#64748b">0</text>
+            <text x="410" y="53" font-size="10" fill="#64748b" text-anchor="end">24</text>
+            <text x="250" y="19" font-size="9.5" fill="#2f9f72">good ≤14</text>
+          </svg>
+          <div style="font-size:12.5px;color:#a7b6c8;">Five of six items identical. Only "depend on others to keep my life in order" moved (rarely → sometimes). "Difficulty unwinding or relaxing" stayed at <b>"often"</b> in both sessions — consistent with the GAD-7 relaxation item.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CPT -->
+  <div class="mlx-card">
+    <div class="mlx-h">2 · Continuous Performance Task (8-min Go/No-Go)</div>
+    <div class="mlx-sub">Grey bar = Sep 2025, blue/green bar = May 2026. Accuracy was already near ceiling at baseline, so the meaningful gains are in speed and consistency.</div>
+
+    <div class="mlx-grid2">
+      <div class="mlx-col" style="min-width:240px;">
+        <div class="mlx-tile" style="border-color:#1c4a3a;">
+          <div class="mlx-name">Reaction time <span style="font-weight:400;color:#7f8fa4;">lower = faster</span></div>
+          <div class="mlx-desc">Average latency for correct responses</div>
+          <svg viewBox="0 0 240 56" width="100%" role="img" aria-label="Reaction time improved from 443 to 363 milliseconds">
+            <rect x="0" y="6" width="133" height="14" rx="3" fill="#3d4b5e"/>
+            <text x="139" y="17" font-size="11" fill="#93a4b8">443 ms</text>
+            <rect x="0" y="28" width="109" height="14" rx="3" fill="#4ade80"/>
+            <text x="115" y="39" font-size="11" font-weight="700" fill="#4ade80">363 ms</text>
+            <text x="0" y="53" font-size="9" fill="#64748b">scale 0–500 ms</text>
+          </svg>
+          <div class="mlx-val"><span class="mlx-chip mlx-good">−81 ms (−18%)</span> &nbsp; z-score −0.23 "Medium" → +1.32 "Superior"</div>
+        </div>
+      </div>
+
+      <div class="mlx-col" style="min-width:240px;">
+        <div class="mlx-tile" style="border-color:#1c4a3a;">
+          <div class="mlx-name">Reaction-time variability <span style="font-weight:400;color:#7f8fa4;">lower = steadier</span></div>
+          <div class="mlx-desc">SD of reaction time — higher indicates inconsistent attention</div>
+          <svg viewBox="0 0 240 56" width="100%" role="img" aria-label="Reaction time variability improved from 54.3 to 34.8 milliseconds">
+            <rect x="0" y="6" width="136" height="14" rx="3" fill="#3d4b5e"/>
+            <text x="142" y="17" font-size="11" fill="#93a4b8">54.3 ms</text>
+            <rect x="0" y="28" width="87" height="14" rx="3" fill="#4ade80"/>
+            <text x="93" y="39" font-size="11" font-weight="700" fill="#4ade80">34.8 ms</text>
+            <text x="0" y="53" font-size="9" fill="#64748b">scale 0–60 ms</text>
+          </svg>
+          <div class="mlx-val"><span class="mlx-chip mlx-good">−19.5 ms (−36%)</span> &nbsp; z +0.90 "Very High" → +1.54 "Very Superior"</div>
+        </div>
+      </div>
+
+      <div class="mlx-col" style="min-width:240px;">
+        <div class="mlx-tile">
+          <div class="mlx-name">Accuracy <span style="font-weight:400;color:#7f8fa4;">higher = better</span></div>
+          <div class="mlx-desc">% correct responses (shown on a 95–100% scale)</div>
+          <svg viewBox="0 0 240 56" width="100%" role="img" aria-label="Accuracy 99.5 to 99.75 percent">
+            <rect x="0" y="6" width="135" height="14" rx="3" fill="#3d4b5e"/>
+            <text x="141" y="17" font-size="11" fill="#93a4b8">99.50%</text>
+            <rect x="0" y="28" width="142" height="14" rx="3" fill="#60a5fa"/>
+            <text x="148" y="39" font-size="11" font-weight="700" fill="#60a5fa">99.75%</text>
+            <text x="0" y="53" font-size="9" fill="#64748b">scale 95–100%</text>
+          </svg>
+          <div class="mlx-val"><span class="mlx-chip mlx-neu">+0.25 pt · at ceiling</span> &nbsp; z +0.71 → +0.79</div>
+        </div>
+      </div>
+
+      <div class="mlx-col" style="min-width:240px;">
+        <div class="mlx-tile">
+          <div class="mlx-name">Errors <span style="font-weight:400;color:#7f8fa4;">lower = better</span></div>
+          <div class="mlx-desc">Commissions = impulsive responses · Omissions = misses</div>
+          <svg viewBox="0 0 240 56" width="100%" role="img" aria-label="Commission errors 2 to 1, omission errors 0 to 0">
+            <text x="0" y="14" font-size="10" fill="#8fa0b5">Commissions</text>
+            <rect x="78" y="4" width="60" height="12" rx="3" fill="#3d4b5e"/><text x="144" y="14" font-size="11" fill="#93a4b8">2</text>
+            <rect x="78" y="19" width="30" height="12" rx="3" fill="#60a5fa"/><text x="114" y="29" font-size="11" font-weight="700" fill="#60a5fa">1</text>
+            <text x="0" y="47" font-size="10" fill="#8fa0b5">Omissions</text>
+            <rect x="78" y="38" width="2" height="12" rx="1" fill="#3d4b5e"/>
+            <text x="90" y="48" font-size="11" fill="#93a4b8">0 → 0 (none in either session)</text>
+          </svg>
+          <div class="mlx-val"><span class="mlx-chip mlx-good">Fewer impulsive errors</span> &nbsp; z +0.58 → +0.69 · omissions z +0.41 both</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:12px;font-size:12.5px;color:#a7b6c8;background:#0f1620;border-left:3px solid #4ade80;padding:10px 12px;border-radius:0 8px 8px 0;">
+      <b>Read together:</b> he responded ~80 ms faster while making <i>fewer</i>, not more, impulsive errors, and his response timing was markedly steadier. That combination argues against a simple speed-for-accuracy trade-off. Note that a repeated task can also improve through practice/familiarity — this comparison cannot separate the two.
+    </div>
+  </div>
+
+  <!-- EEG CHECKS -->
+  <div class="mlx-card">
+    <div class="mlx-h">3 · EEG checks — where the picture changed</div>
+    <div class="mlx-sub">Green band = the reference normal range for that check. Hollow marker = Sep 2025, filled marker = May 2026. Six checks are now outside, or further outside, their normal range; ten stayed inside.</div>
+
+    <div class="mlx-grid2">
+
+      <div class="mlx-col">
+        <div class="mlx-tile" style="border-color:#4a2020;margin-bottom:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;">
+            <div class="mlx-name">Theta/Beta Ratio — Central, eyes open</div><span class="mlx-chip mlx-bad">further out</span>
+          </div>
+          <div class="mlx-desc">Associated with focus · normal ≤ 2.2 · scale 0–5</div>
+          <svg viewBox="0 0 320 46" width="100%" role="img" aria-label="Central theta beta ratio rose from 2.9 to 4.15, normal is 2.2 or less">
+            <rect x="8" y="18" width="284" height="10" rx="5" fill="#22303f"/><rect x="8" y="18" width="125" height="10" rx="5" fill="#12472f"/>
+            <line x1="173" y1="23" x2="243" y2="23" stroke="#f87171" stroke-width="2"/>
+            <circle cx="173" cy="23" r="5" fill="#0f1620" stroke="#93a4b8" stroke-width="2"/><circle cx="244" cy="23" r="6.5" fill="#f87171"/>
+            <text x="244" y="11" text-anchor="middle" font-size="12" font-weight="700" fill="#f87171">4.15</text>
+            <text x="168" y="41" text-anchor="middle" font-size="11" fill="#93a4b8">2.90</text>
+            <text x="70" y="12" font-size="9" fill="#2f9f72">normal ≤2.2</text>
+          </svg>
+        </div>
+
+        <div class="mlx-tile" style="border-color:#4a2020;margin-bottom:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;">
+            <div class="mlx-name">Theta/Beta Ratio — Frontal left & right, eyes closed</div><span class="mlx-chip mlx-bad">further out</span>
+          </div>
+          <div class="mlx-desc">Associated with impulse control / emotional volatility · normal ≤ 2.2 · scale 0–5</div>
+          <svg viewBox="0 0 320 76" width="100%" role="img" aria-label="Frontal left theta beta ratio 3.05 to 4.57 and right 2.33 to 6.16">
+            <text x="8" y="9" font-size="9.5" fill="#8fa0b5">LEFT</text>
+            <rect x="8" y="14" width="284" height="10" rx="5" fill="#22303f"/><rect x="8" y="14" width="125" height="10" rx="5" fill="#12472f"/>
+            <line x1="181" y1="19" x2="267" y2="19" stroke="#f87171" stroke-width="2"/>
+            <circle cx="181" cy="19" r="5" fill="#0f1620" stroke="#93a4b8" stroke-width="2"/><circle cx="268" cy="19" r="6.5" fill="#f87171"/>
+            <text x="181" y="9" text-anchor="middle" font-size="10.5" fill="#93a4b8">3.05</text>
+            <text x="268" y="9" text-anchor="middle" font-size="11.5" font-weight="700" fill="#f87171">4.57</text>
+            <text x="8" y="49" font-size="9.5" fill="#8fa0b5">RIGHT</text>
+            <rect x="8" y="54" width="284" height="10" rx="5" fill="#22303f"/><rect x="8" y="54" width="125" height="10" rx="5" fill="#12472f"/>
+            <line x1="140" y1="59" x2="286" y2="59" stroke="#f87171" stroke-width="2"/>
+            <circle cx="140" cy="59" r="5" fill="#0f1620" stroke="#93a4b8" stroke-width="2"/>
+            <polygon points="284,52 296,59 284,66" fill="#f87171"/>
+            <text x="140" y="49" text-anchor="middle" font-size="10.5" fill="#93a4b8">2.33</text>
+            <text x="268" y="49" text-anchor="middle" font-size="11.5" font-weight="700" fill="#f87171">6.16</text>
+            <text x="292" y="74" text-anchor="end" font-size="9" fill="#64748b">6.16 sits beyond the 0–5 scale</text>
+          </svg>
+        </div>
+
+        <div class="mlx-tile" style="border-color:#4a3a12;margin-bottom:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;">
+            <div class="mlx-name">Theta/Beta Ratio while counting — Central</div><span class="mlx-chip mlx-warn">newly outside</span>
+          </div>
+          <div class="mlx-desc">Cognitive task, eyes closed · ≤3 good, ≤2.2 better · scale 0–5</div>
+          <svg viewBox="0 0 320 46" width="100%" role="img" aria-label="Theta beta ratio while counting rose from 2.55 to 4.96">
+            <rect x="8" y="18" width="284" height="10" rx="5" fill="#22303f"/><rect x="8" y="18" width="170" height="10" rx="5" fill="#12472f"/><rect x="8" y="18" width="125" height="10" rx="5" fill="#186b4b"/>
+            <line x1="153" y1="23" x2="288" y2="23" stroke="#fbbf24" stroke-width="2"/>
+            <circle cx="153" cy="23" r="5" fill="#0f1620" stroke="#93a4b8" stroke-width="2"/><circle cx="289" cy="23" r="6.5" fill="#fbbf24"/>
+            <text x="285" y="11" text-anchor="middle" font-size="12" font-weight="700" fill="#fbbf24">4.96</text>
+            <text x="148" y="41" text-anchor="middle" font-size="11" fill="#93a4b8">2.55</text>
+            <text x="60" y="12" font-size="9" fill="#2f9f72">good ≤3</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="mlx-col">
+        <div class="mlx-tile" style="border-color:#4a3a12;margin-bottom:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;">
+            <div class="mlx-name">Low-alpha / High-alpha — Frontal</div><span class="mlx-chip mlx-warn">newly outside</span>
+          </div>
+          <div class="mlx-desc">Associated with memory/concentration; may be higher with age or sleep difficulties · ≤2.3 good, ≤1.5 better · scale 0–5</div>
+          <svg viewBox="0 0 320 46" width="100%" role="img" aria-label="Low alpha to high alpha ratio rose from 2.01 to 3.24">
+            <rect x="8" y="18" width="284" height="10" rx="5" fill="#22303f"/><rect x="8" y="18" width="131" height="10" rx="5" fill="#12472f"/><rect x="8" y="18" width="85" height="10" rx="5" fill="#186b4b"/>
+            <line x1="122" y1="23" x2="192" y2="23" stroke="#fbbf24" stroke-width="2"/>
+            <circle cx="122" cy="23" r="5" fill="#0f1620" stroke="#93a4b8" stroke-width="2"/><circle cx="192" cy="23" r="6.5" fill="#fbbf24"/>
+            <text x="192" y="11" text-anchor="middle" font-size="12" font-weight="700" fill="#fbbf24">3.24</text>
+            <text x="117" y="41" text-anchor="middle" font-size="11" fill="#93a4b8">2.01</text>
+            <text x="150" y="12" font-size="9" fill="#2f9f72">good ≤2.3</text>
+          </svg>
+        </div>
+
+        <div class="mlx-tile" style="border-color:#4a3a12;margin-bottom:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;">
+            <div class="mlx-name">Peak Alpha — Central, eyes closed</div><span class="mlx-chip mlx-bad">below normal, lower</span>
+          </div>
+          <div class="mlx-desc">Normal &gt; 9.5 Hz · scale 8–12 Hz</div>
+          <svg viewBox="0 0 320 46" width="100%" role="img" aria-label="Peak alpha fell from 9 Hz to 8 Hz, below the 9.5 Hz normal">
+            <rect x="8" y="18" width="284" height="10" rx="5" fill="#22303f"/><rect x="114" y="18" width="178" height="10" rx="5" fill="#12472f"/>
+            <line x1="79" y1="23" x2="16" y2="23" stroke="#f87171" stroke-width="2"/>
+            <circle cx="79" cy="23" r="5" fill="#0f1620" stroke="#93a4b8" stroke-width="2"/><circle cx="14" cy="23" r="6.5" fill="#f87171"/>
+            <text x="16" y="11" text-anchor="middle" font-size="12" font-weight="700" fill="#f87171">8 Hz</text>
+            <text x="85" y="41" text-anchor="middle" font-size="11" fill="#93a4b8">9 Hz</text>
+            <text x="150" y="12" font-size="9" fill="#2f9f72">normal &gt;9.5 Hz</text>
+          </svg>
+        </div>
+
+        <div class="mlx-tile" style="border-color:#3a3a3a;margin-bottom:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;">
+            <div class="mlx-name">Two marginal crossings</div><span class="mlx-chip mlx-warn">just outside</span>
+          </div>
+          <div class="mlx-desc">Both were inside the normal range before and are now just past the boundary</div>
+          <svg viewBox="0 0 320 76" width="100%" role="img" aria-label="Beta response while counting fell from 1 percent to minus 16 percent; theta beta ratio symmetry fell from 1.31 to 0.74">
+            <text x="8" y="9" font-size="9.5" fill="#8fa0b5">BETA RESPONSE WHILE COUNTING · normal &gt; −15%</text>
+            <rect x="8" y="14" width="284" height="10" rx="5" fill="#22303f"/><rect x="129" y="14" width="163" height="10" rx="5" fill="#12472f"/>
+            <line x1="151" y1="19" x2="128" y2="19" stroke="#fbbf24" stroke-width="2"/>
+            <circle cx="151" cy="19" r="5" fill="#0f1620" stroke="#93a4b8" stroke-width="2"/><circle cx="127" cy="19" r="6.5" fill="#fbbf24"/>
+            <text x="180" y="9" font-size="10.5" fill="#93a4b8">+1% →</text>
+            <text x="215" y="9" font-size="11" font-weight="700" fill="#fbbf24">−16%</text>
+            <text x="8" y="49" font-size="9.5" fill="#8fa0b5">THETA/BETA RATIO SYMMETRY · normal &gt; 0.8</text>
+            <rect x="8" y="54" width="284" height="10" rx="5" fill="#22303f"/><rect x="122" y="54" width="170" height="10" rx="5" fill="#12472f"/>
+            <line x1="194" y1="59" x2="114" y2="59" stroke="#fbbf24" stroke-width="2"/>
+            <circle cx="194" cy="59" r="5" fill="#0f1620" stroke="#93a4b8" stroke-width="2"/><circle cx="113" cy="59" r="6.5" fill="#fbbf24"/>
+            <text x="215" y="49" font-size="10.5" fill="#93a4b8">1.31 →</text>
+            <text x="255" y="49" font-size="11" font-weight="700" fill="#fbbf24">0.74</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:4px;">
+      <div style="font-size:12.5px;font-weight:700;color:#9fb0c4;margin-bottom:8px;">Stayed within the normal range in both sessions</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;font-size:12px;">
+        <div class="mlx-tile" style="flex:1 1 170px;padding:9px 11px;">Alpha response (central)<br><b style="color:#4ade80;">54% → 55%</b> <span style="color:#7f8fa4;">(&gt;30%)</span></div>
+        <div class="mlx-tile" style="flex:1 1 170px;padding:9px 11px;">Alpha recovery (central)<br><b style="color:#4ade80;">−21% → −4%</b> <span style="color:#7f8fa4;">(≤25%)</span></div>
+        <div class="mlx-tile" style="flex:1 1 170px;padding:9px 11px;">Alpha symmetry (frontal)<br><b style="color:#4ade80;">0.96 → 0.96</b> <span style="color:#7f8fa4;">(0.85–1.15)</span></div>
+        <div class="mlx-tile" style="flex:1 1 170px;padding:9px 11px;">Theta symmetry (frontal)<br><b style="color:#4ade80;">1.23 → 0.92</b> <span style="color:#7f8fa4;">(0.85–1.25)</span></div>
+        <div class="mlx-tile" style="flex:1 1 170px;padding:9px 11px;">Beta symmetry (frontal)<br><b style="color:#fbbf24;">0.94 → 1.24</b> <span style="color:#7f8fa4;">(0.85–1.25, now at upper edge)</span></div>
+        <div class="mlx-tile" style="flex:1 1 170px;padding:9px 11px;">Beta balance (frontal)<br><b style="color:#fbbf24;">0.59 → 0.42</b> <span style="color:#7f8fa4;">(0.4–0.75, now at lower edge)</span></div>
+        <div class="mlx-tile" style="flex:1 1 170px;padding:9px 11px;">Theta/Low-beta (central)<br><b style="color:#fbbf24;">1.88 → 2.88</b> <span style="color:#7f8fa4;">(≤3, near limit)</span></div>
+        <div class="mlx-tile" style="flex:1 1 170px;padding:9px 11px;">Theta/Beta response while counting<br><b style="color:#4ade80;">5% → 5%</b> <span style="color:#7f8fa4;">(≤15%)</span></div>
+        <div class="mlx-tile" style="flex:1 1 170px;padding:9px 11px;">Theta/Alpha, frontal left<br><b style="color:#4ade80;">1.09 → 1.25</b> <span style="color:#7f8fa4;">(&gt;0.4)</span></div>
+        <div class="mlx-tile" style="flex:1 1 170px;padding:9px 11px;">Theta/Alpha, frontal right<br><b style="color:#4ade80;">0.85 → 1.31</b> <span style="color:#7f8fa4;">(&gt;0.4)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BRAINMAPS -->
+  <div class="mlx-card">
+    <div class="mlx-h">4 · EEG brainmaps — a broad shift toward slower activity</div>
+    <div class="mlx-sub">Each dot is the average z-score across the six sites recorded in <b>both</b> sessions (Fp1, F3, Fz, F4, Cz, Tp10). z = 0 is the healthy same-age/gender average; the further from 0, the more the recording differs from that norm group. Hollow = Sep 2025, filled = May 2026.</div>
+
+    <div class="mlx-grid2">
+      <div class="mlx-col" style="min-width:290px;">
+        <div style="font-size:12px;font-weight:700;color:#9fb0c4;margin-bottom:4px;">EYES OPEN</div>
+        <svg viewBox="0 0 460 292" width="100%" role="img" aria-label="Eyes open band z-scores: theta rose from 1.08 to 3.61, low alpha 0.80 to 2.76, beta fell from minus 0.66 to minus 1.91">
+          <line x1="104.5" y1="26" x2="104.5" y2="272" stroke="#1f2a38"/><line x1="218.3" y1="26" x2="218.3" y2="272" stroke="#3b4a5f" stroke-dasharray="3 3"/><line x1="332.1" y1="26" x2="332.1" y2="272" stroke="#1f2a38"/><line x1="446" y1="26" x2="446" y2="272" stroke="#1f2a38"/>
+          <text x="104.5" y="18" text-anchor="middle" font-size="9" fill="#64748b">−2</text><text x="218.3" y="18" text-anchor="middle" font-size="9" fill="#8fa0b5">0</text><text x="332.1" y="18" text-anchor="middle" font-size="9" fill="#64748b">+2</text><text x="446" y="18" text-anchor="middle" font-size="9" fill="#64748b">+4</text>
+
+          <text x="4" y="44" font-size="10" fill="#9fb0c4">Delta 1–3</text>
+          <line x1="206.9" y1="40" x2="137.5" y2="40" stroke="#3d4b5e" stroke-width="2"/><circle cx="206.9" cy="40" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="137.5" cy="40" r="5.5" fill="#60a5fa"/>
+          <text x="4" y="70" font-size="10" fill="#fbbf24" font-weight="700">Theta 4–7</text>
+          <line x1="279.8" y1="66" x2="423.8" y2="66" stroke="#5c4a1c" stroke-width="2.5"/><circle cx="279.8" cy="66" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="423.8" cy="66" r="6.5" fill="#fbbf24"/><text x="423.8" y="60" text-anchor="middle" font-size="9.5" fill="#fbbf24">+3.6</text>
+          <text x="4" y="96" font-size="10" fill="#9fb0c4">Slow 1–8</text>
+          <line x1="249.6" y1="92" x2="300.8" y2="92" stroke="#5c4a1c" stroke-width="2"/><circle cx="249.6" cy="92" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="300.8" cy="92" r="5.5" fill="#fbbf24"/>
+          <text x="4" y="122" font-size="10" fill="#a78bfa" font-weight="700">Low α 8–9</text>
+          <line x1="263.8" y1="118" x2="375.4" y2="118" stroke="#4b3d78" stroke-width="2.5"/><circle cx="263.8" cy="118" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="375.4" cy="118" r="6.5" fill="#a78bfa"/><text x="375.4" y="112" text-anchor="middle" font-size="9.5" fill="#a78bfa">+2.8</text>
+          <text x="4" y="148" font-size="10" fill="#9fb0c4">Alpha 8–12</text>
+          <line x1="261.6" y1="144" x2="297.4" y2="144" stroke="#4b3d78" stroke-width="2"/><circle cx="261.6" cy="144" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="297.4" cy="144" r="5.5" fill="#a78bfa"/>
+          <text x="4" y="174" font-size="10" fill="#9fb0c4">High α 11–12</text>
+          <line x1="231.9" y1="170" x2="157.4" y2="170" stroke="#4b3d78" stroke-width="2"/><circle cx="231.9" cy="170" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="157.4" cy="170" r="5.5" fill="#a78bfa"/>
+          <text x="4" y="200" font-size="10" fill="#9fb0c4">Low β 12–15</text>
+          <line x1="189.3" y1="196" x2="114.1" y2="196" stroke="#2c4a6b" stroke-width="2"/><circle cx="189.3" cy="196" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="114.1" cy="196" r="5.5" fill="#60a5fa"/>
+          <text x="4" y="226" font-size="10" fill="#60a5fa" font-weight="700">Beta 16–20</text>
+          <line x1="180.7" y1="222" x2="109.6" y2="222" stroke="#2c4a6b" stroke-width="2.5"/><circle cx="180.7" cy="222" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="109.6" cy="222" r="6.5" fill="#60a5fa"/><text x="109.6" y="216" text-anchor="middle" font-size="9.5" fill="#60a5fa">−1.9</text>
+          <text x="4" y="252" font-size="10" fill="#9fb0c4">High β 21–30</text>
+          <line x1="173.9" y1="248" x2="129.5" y2="248" stroke="#2c4a6b" stroke-width="2"/><circle cx="173.9" cy="248" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="129.5" cy="248" r="5.5" fill="#60a5fa"/>
+          <text x="76" y="284" font-size="9" fill="#64748b">z-score vs. healthy norms (average of 6 shared sites)</text>
+        </svg>
+      </div>
+
+      <div class="mlx-col" style="min-width:290px;">
+        <div style="font-size:12px;font-weight:700;color:#9fb0c4;margin-bottom:4px;">EYES CLOSED</div>
+        <svg viewBox="0 0 460 292" width="100%" role="img" aria-label="Eyes closed band z-scores: theta rose from 0.53 to 2.39, beta fell from minus 0.83 to minus 1.81">
+          <line x1="104.5" y1="26" x2="104.5" y2="272" stroke="#1f2a38"/><line x1="218.3" y1="26" x2="218.3" y2="272" stroke="#3b4a5f" stroke-dasharray="3 3"/><line x1="332.1" y1="26" x2="332.1" y2="272" stroke="#1f2a38"/><line x1="446" y1="26" x2="446" y2="272" stroke="#1f2a38"/>
+          <text x="104.5" y="18" text-anchor="middle" font-size="9" fill="#64748b">−2</text><text x="218.3" y="18" text-anchor="middle" font-size="9" fill="#8fa0b5">0</text><text x="332.1" y="18" text-anchor="middle" font-size="9" fill="#64748b">+2</text><text x="446" y="18" text-anchor="middle" font-size="9" fill="#64748b">+4</text>
+
+          <text x="4" y="44" font-size="10" fill="#9fb0c4">Delta 1–3</text>
+          <line x1="178.5" y1="40" x2="146" y2="40" stroke="#3d4b5e" stroke-width="2"/><circle cx="178.5" cy="40" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="146" cy="40" r="5.5" fill="#60a5fa"/>
+          <text x="4" y="70" font-size="10" fill="#fbbf24" font-weight="700">Theta 4–7</text>
+          <line x1="248.5" y1="66" x2="354.3" y2="66" stroke="#5c4a1c" stroke-width="2.5"/><circle cx="248.5" cy="66" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="354.3" cy="66" r="6.5" fill="#fbbf24"/><text x="354.3" y="60" text-anchor="middle" font-size="9.5" fill="#fbbf24">+2.4</text>
+          <text x="4" y="96" font-size="10" fill="#9fb0c4">Slow 1–8</text>
+          <line x1="228" y1="92" x2="297.4" y2="92" stroke="#5c4a1c" stroke-width="2"/><circle cx="228" cy="92" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="297.4" cy="92" r="5.5" fill="#fbbf24"/>
+          <text x="4" y="122" font-size="10" fill="#a78bfa" font-weight="700">Low α 8–9</text>
+          <line x1="303.1" y1="118" x2="355.5" y2="118" stroke="#4b3d78" stroke-width="2.5"/><circle cx="303.1" cy="118" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="355.5" cy="118" r="6.5" fill="#a78bfa"/><text x="355.5" y="112" text-anchor="middle" font-size="9.5" fill="#a78bfa">+2.4</text>
+          <text x="4" y="148" font-size="10" fill="#9fb0c4">Alpha 8–12</text>
+          <line x1="275.2" y1="144" x2="272.9" y2="144" stroke="#4b3d78" stroke-width="2"/><circle cx="275.2" cy="144" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="272.9" cy="144" r="5.5" fill="#a78bfa"/>
+          <text x="4" y="174" font-size="10" fill="#9fb0c4">High α 11–12</text>
+          <line x1="187.6" y1="170" x2="158" y2="170" stroke="#4b3d78" stroke-width="2"/><circle cx="187.6" cy="170" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="158" cy="170" r="5.5" fill="#a78bfa"/>
+          <text x="4" y="200" font-size="10" fill="#9fb0c4">Low β 12–15</text>
+          <line x1="156.8" y1="196" x2="146.6" y2="196" stroke="#2c4a6b" stroke-width="2"/><circle cx="156.8" cy="196" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="146.6" cy="196" r="5.5" fill="#60a5fa"/>
+          <text x="4" y="226" font-size="10" fill="#60a5fa" font-weight="700">Beta 16–20</text>
+          <line x1="171.1" y1="222" x2="115.3" y2="222" stroke="#2c4a6b" stroke-width="2.5"/><circle cx="171.1" cy="222" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="115.3" cy="222" r="6.5" fill="#60a5fa"/><text x="115.3" y="216" text-anchor="middle" font-size="9.5" fill="#60a5fa">−1.8</text>
+          <text x="4" y="252" font-size="10" fill="#9fb0c4">High β 21–30</text>
+          <line x1="157.4" y1="248" x2="122.1" y2="248" stroke="#2c4a6b" stroke-width="2"/><circle cx="157.4" cy="248" r="4.5" fill="#0f1620" stroke="#93a4b8" stroke-width="1.8"/><circle cx="122.1" cy="248" r="5.5" fill="#60a5fa"/>
+          <text x="76" y="284" font-size="9" fill="#64748b">z-score vs. healthy norms (average of 6 shared sites)</text>
+        </svg>
+      </div>
+    </div>
+
+    <div style="margin-top:14px;">
+      <div style="font-size:12.5px;font-weight:700;color:#9fb0c4;margin-bottom:2px;">The biggest single change: theta with eyes open, site by site</div>
+      <div style="font-size:11.5px;color:#7f8fa4;margin-bottom:6px;">Theta rose at every shared site, most strongly over the frontal sites. Reference: high eyes-open theta is associated with daydreaming, inattention, brain fog or fatigue.</div>
+      <svg viewBox="0 0 440 160" width="100%" role="img" aria-label="Eyes open theta z-scores by site rose at all six sites, largest at F3 from 1.06 to 4.86">
+        <line x1="34" y1="130" x2="430" y2="130" stroke="#3b4a5f"/>
+        <line x1="34" y1="110" x2="430" y2="110" stroke="#1f2a38"/><text x="30" y="113" text-anchor="end" font-size="8.5" fill="#64748b">1</text>
+        <line x1="34" y1="90" x2="430" y2="90" stroke="#1f2a38"/><text x="30" y="93" text-anchor="end" font-size="8.5" fill="#64748b">2</text>
+        <line x1="34" y1="70" x2="430" y2="70" stroke="#1f2a38"/><text x="30" y="73" text-anchor="end" font-size="8.5" fill="#64748b">3</text>
+        <line x1="34" y1="50" x2="430" y2="50" stroke="#1f2a38"/><text x="30" y="53" text-anchor="end" font-size="8.5" fill="#64748b">4</text>
+        <line x1="34" y1="30" x2="430" y2="30" stroke="#1f2a38"/><text x="30" y="33" text-anchor="end" font-size="8.5" fill="#64748b">5</text>
+        <text x="4" y="20" font-size="8.5" fill="#64748b">z</text>
+
+        <rect x="53" y="107.7" width="14" height="22.3" fill="#3d4b5e"/><rect x="73" y="82.5" width="14" height="47.5" fill="#fbbf24"/><text x="70" y="144" text-anchor="middle" font-size="10" fill="#9fb0c4">Fp1</text>
+        <rect x="115" y="108.8" width="14" height="21.2" fill="#3d4b5e"/><rect x="135" y="32.7" width="14" height="97.3" fill="#fbbf24"/><text x="132" y="144" text-anchor="middle" font-size="10" fill="#9fb0c4">F3</text><text x="142" y="28" text-anchor="middle" font-size="9" fill="#fbbf24">4.9</text>
+        <rect x="177" y="104.2" width="14" height="25.8" fill="#3d4b5e"/><rect x="197" y="48.2" width="14" height="81.8" fill="#fbbf24"/><text x="194" y="144" text-anchor="middle" font-size="10" fill="#9fb0c4">Fz</text><text x="204" y="44" text-anchor="middle" font-size="9" fill="#fbbf24">4.1</text>
+        <rect x="239" y="94.5" width="14" height="35.5" fill="#3d4b5e"/><rect x="259" y="45.8" width="14" height="84.2" fill="#fbbf24"/><text x="256" y="144" text-anchor="middle" font-size="10" fill="#9fb0c4">F4</text><text x="266" y="41" text-anchor="middle" font-size="9" fill="#fbbf24">4.2</text>
+        <rect x="301" y="106.9" width="14" height="23.1" fill="#3d4b5e"/><rect x="321" y="76.7" width="14" height="53.3" fill="#fbbf24"/><text x="318" y="144" text-anchor="middle" font-size="10" fill="#9fb0c4">Cz</text>
+        <rect x="363" y="128.7" width="14" height="1.3" fill="#3d4b5e"/><rect x="383" y="61.2" width="14" height="68.8" fill="#fbbf24"/><text x="380" y="144" text-anchor="middle" font-size="10" fill="#9fb0c4">Tp10</text>
+        <rect x="300" y="6" width="10" height="8" fill="#3d4b5e"/><text x="314" y="14" font-size="9" fill="#93a4b8">Sep 2025</text>
+        <rect x="366" y="6" width="10" height="8" fill="#fbbf24"/><text x="380" y="14" font-size="9" fill="#fbbf24">May 2026</text>
+      </svg>
+    </div>
+
+    <div style="margin-top:12px;font-size:12.5px;color:#a7b6c8;background:#0f1620;border-left:3px solid #fbbf24;padding:10px 12px;border-radius:0 8px 8px 0;">
+      <b>Observation vs. explanation.</b> What is <i>observed</i> is a near-uniform pattern: slow frequencies (theta, low alpha) up and every beta band down, at almost every site, in both eyes-open and eyes-closed conditions. Region-specific findings are usually more selective than this. Possible explanations that these data cannot separate include a genuine change in resting brain activity, differences in state at the time of recording (alertness/drowsiness, sleep the night before, time of day), or differences in recording/signal quality between sessions. It is also notable that the EEG direction is opposite to the CPT result, where sustained attention was faster and steadier.
+    </div>
+  </div>
+
+  <!-- PROVENANCE -->
+  <div class="mlx-card" style="background:#0f1620;">
+    <div class="mlx-h">How to read these numbers</div>
+    <ul style="margin:0;padding-left:18px;font-size:12.5px;color:#9fb0c4;">
+      <li class="mlx-li">Brainmap comparisons use only the <b>six sites recorded in both sessions</b> (Fp1, F3, Fz, F4, Cz, Tp10). Session 2 added <b>Fp2 and Tp9</b>, which have no session-1 baseline. Tp9 in session 2 showed very extreme low-alpha values (z ≈ +7.8 eyes open, +5.3 eyes closed) — these are excluded from the averages above and should not be interpreted without a comparison recording.</li>
+      <li class="mlx-li">Band averages shown are means of the per-site z-scores; individual sites vary around them.</li>
+      <li class="mlx-li">Normal ranges and "good/better" bands are taken directly from the supplied reference material. <b>No threshold for a clinically meaningful <i>change</i> score is defined in that material</b>, so score movements are described in size and direction only, not as statistically or clinically significant.</li>
+      <li class="mlx-li">CPT z-scores and their verbal labels ("Superior", "Very High", etc.) are reproduced as reported by the platform.</li>
+      <li class="mlx-li">This is a comparison of two assessments, not a diagnosis, and it cannot attribute any change to a cause or a treatment.</li>
+    </ul>
+  </div>
+
+  <!-- VERDICT -->
+  <div class="mlx-card" style="border-color:#2b3a4e;background:linear-gradient(180deg,#16202c 0%,#131a24 100%);">
+    <div class="mlx-h" style="color:#4ade80;">Overall verdict</div>
+    <div style="font-size:15.5px;color:#dce6f2;margin-bottom:14px;">
+      Across 242 days, the <b>subjective and behavioural picture improved</b>: general wellbeing improved substantially, depressive symptoms and functional impact eased, and objective attention performance became faster and considerably more consistent while staying accurate. Two things do not fit that picture and remain unresolved: <b>anxiety, which rose and sits above its reference band</b>, and <b>the EEG, which shifted broadly toward slower activity</b> and pushed six checks outside their normal ranges. The EEG shift is currently unexplained and discordant with the performance data, so it should be verified before it is read as a change in brain function.
+    </div>
+
+    <div style="font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#8fa0b5;font-weight:700;margin-bottom:8px;">Suggested next steps — for clarification and discussion</div>
+    <ol style="margin:0;padding-left:20px;font-size:13.5px;color:#c8d5e4;">
+      <li class="mlx-li"><b>Check the conditions of the second EEG session</b> before interpreting it: sleep the night before, time of day, caffeine, alertness/drowsiness during the recording, and signal quality. A whole-head slowing pattern of this size warrants that check first.</li>
+      <li class="mlx-li"><b>Consider repeating the EEG assessment</b> under conditions comparable to the first, with the same channel set, to establish whether the slowing is reproducible.</li>
+      <li class="mlx-li"><b>Discuss the anxiety increase in session.</b> Explore what has changed around worry across different topics and difficulty relaxing — the ASRS item "difficulty unwinding" was also "often" at both time points. Re-administering the GAD-7 can clarify whether this reflects a trend or the last two weeks specifically.</li>
+      <li class="mlx-li"><b>Ask about sleep and fatigue.</b> The PHQ-9 energy item worsened, peak alpha moved from 9 Hz to 8 Hz, and the low-alpha/high-alpha ratio rose above the ≤2.3 level — the reference notes both may be influenced by sleep difficulties.</li>
+      <li class="mlx-li"><b>Clarify the mixed picture on concentration.</b> The GHQ-12 concentration item improved to "better than usual" and the CPT improved, while the PHQ-9 concentration item worsened. A short conversation about focus in real-world settings would resolve which reflects daily experience.</li>
+      <li class="mlx-li"><b>Note for interpretation:</b> the CPT was repeated on the same task, so practice effects cannot be excluded as a contributor to the faster, steadier responding.</li>
+    </ol>
+  </div>
+
+</div>
+</div></div>
+</section></div>
+</body></html>
